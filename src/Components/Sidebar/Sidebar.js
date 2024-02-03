@@ -1,17 +1,18 @@
 import React from "react";
-import home from "./Media/1.png";
-import inplay from "./Media/2.png";
-import casino from "./Media/3.png";
-import tennis from "./Media/4.png";
-import cricket from "./Media/5.png";
-import football from "./Media/6.png";
+import home from "../../Media/1.png";
+import inplay from "../../Media/2.png";
+import casino from "../../Media/3.png";
+import tennis from "../../Media/4.png";
+import cricket from "../../Media/5.png";
+import football from "../../Media/6.png";
+import "./Sidebar.css";
 
 function Sidebar({ showSidebar }) {
   return (
    
-      <div className="col-lg-2 col-sm-4 side-bar  ">
+      
         <div
-          className={`sidebar  d-lg-block${
+          className={`sidebar side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${
             showSidebar ? " d-block" : " d-none"
           }`}
         >
@@ -68,7 +69,7 @@ function Sidebar({ showSidebar }) {
             </div>
           </div>
         </div>
-      </div>
+      
    
   );
 }

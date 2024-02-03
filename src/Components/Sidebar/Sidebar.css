@@ -1,0 +1,38 @@
+.sb-h{
+    border-bottom: 1px solid #43CEED;
+    font-size: 14px;
+    color:#43CEED;
+    font-family: "mukta";
+    font-weight: 600;
+  }
+  .side-bar{
+    background-color: #202020;
+    height : 89vh;
+  }
+  .list-group{
+    background-color: #202020;
+  
+  }
+  .list-group-item{
+    background-color: #202020;
+    border: none !important;
+    border-bottom: 1px solid grey !important;
+    color: white !important;
+    font-size: 12px;
+    font-family: "mukta";
+    font-weight: 600;
+  
+  }
+  .list-group-item:hover{
+    translate: 3px 0px 0px;
+    transition: .5s ease;
+    border-left: 2px solid #fa5004 !important;
+  }
+  .side-icon{
+    height: 20px;
+    color: white !important;
+    /* background-color: white; */
+    border: none !important;
+    opacity: 1;
+  }
+  

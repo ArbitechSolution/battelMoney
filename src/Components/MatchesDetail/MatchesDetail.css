@@ -1,0 +1,79 @@
+.MainArea{
+    background-color: #202020;
+    min-height: 300px !important;
+    max-height: auto !important;
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid white !important; */
+}
+.sport-div{
+    background-color: #353434;
+    height: 80px;
+}
+.single-sport-div{
+    height: 80px;
+    width: 90px;
+    color: white !important;
+    font-family: "mukta";
+    /* border: 1px solid white !important;; */
+
+}
+.round-sport-div{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: #5a5858;
+}
+.sport-img{
+    height: 30px;
+    width: 30px;
+}
+.num-div{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    height: 16px;
+    margin-top: 2px;
+}
+.num-div p{
+    font-size: 14px;
+}
+/* -------------------matchdata----------- */
+.match-div{
+    border-bottom: 1px solid #5a5858;
+    height: 70px;
+}
+.schedule-btn{
+    background-color: #5a5858;
+    height: 45px;
+    width: 80px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.match-name{
+    color:white;
+    font-family: "mukta";
+    font-weight: 500;
+}
+.tournamnet-name{
+    color: grey;
+    font-size: 12px;
+}
+.vs{
+    color:#fd740d;
+}
+.blue-btn{
+    background-color:rgb(84, 84, 253) !important;
+    color: white !important;
+    border: none;
+
+
+
+}
+.orange-btn{
+    background-color:#e27e32 !important;
+    color: white;
+    border: none;
+
+}

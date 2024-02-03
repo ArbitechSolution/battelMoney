@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import SliderH from "./SliderH";
+import Navbar from "./Components/Navbar/Navbar";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import SliderH from "./Components/MatchesDetail/SliderH";
 import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import LeftSidebar from "./Components/LeftSidebar/LeftSidebar";
+import MainArea from "./Components/MatchesDetail/MatchesDetail";
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -12,13 +15,14 @@ function App() {
   };
 
   return (
-    <div className="bg-dark">
+    <div className="bg-black row">
       <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
-      <div className="row">
+     
       <Sidebar showSidebar={showSidebar} />
-      <SliderH/>
+      <MainArea/>
+      <LeftSidebar/>
 
-      </div>
+      
       
       
       

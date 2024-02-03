@@ -1,0 +1,14 @@
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.slick-dots{
+  margin-bottom: 30px;
+  color:#fd740d !important;
+  
+}
+.slider-img{
+  border-radius: 5px !important;
+  
+}

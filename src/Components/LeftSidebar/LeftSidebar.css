@@ -1,0 +1,112 @@
+.L-sidebar{
+    background-color: #202020;
+    height: 89vh;
+    overflow-y: scroll;
+}
+.L-sidebar::-webkit-scrollbar{
+    display:none;
+}
+.maincard-div{
+    border-radius: 7px;
+    background-color: #b92e2e;
+    height: 250px;
+    width:95%;
+}
+.leftbar-h{
+   
+    border-bottom: 1px solid #43CEED;
+
+}
+.leftbar-h p{
+    font-size: 15px;
+    color:#43CEED;
+    font-family: "mukta";
+
+}
+.maincard{
+    height:250px;
+    background-color: #202020;
+    
+    border-radius: 7px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) to change the transparency */
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+.overlay h2{
+    z-index: 999;
+    color: white !important;
+    font-family: "mukta ";
+
+    
+}
+
+
+.card-img-div{
+    width: 240px;
+    height:140px !important;
+    margin-left: 45px;
+
+}
+.maincard-btn{
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    border:none !important;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to right, #1368de 0, #4a8ff0 15%, #548ee0 30%, #1567d8 55%, #2869c3 100%) !important;
+}
+.slick-dots{
+    margin-bottom: 40px;
+    color:#fd740d !important;
+    /* margin-left: 10px; */
+    
+  }
+  .smallcard-div{
+    width: 150px;
+    background-color: #202020;
+    border-radius: 5px;
+    border:none;
+    
+  }
+  .small-card-img{
+    border-radius: 5px;
+  }
+  .overlaySmallCard{
+    position:absolute;
+    bottom:0;
+    overflow: hidden;
+    left:0;
+    right:0;
+    height:0;
+    background-color: rgba(70, 67, 67, 0.75);
+    border-radius: 5px;
+
+  
+}
+.overlaySmallCard p{
+    color: white !important;
+    font: "mukta";
+    font-size: 12px;
+    font-weight: 600;
+    /* margin-left: 36px; */
+    margin-top: 30px;
+}
+
+.smallcard-div:hover{
+    
+    /* translate: 0px 15px 0px; */
+    transition: .5s ease;
+}
+.smallcard-div:hover .overlaySmallCard{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+
+
+}
