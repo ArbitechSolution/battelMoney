@@ -5,7 +5,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import SliderH from "./Components/MatchesDetail/SliderH";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import LeftSidebar from "./Components/LeftSidebar/LeftSidebar";
+import RightSidebar from "./Components/RightSidebar/RIghtSidebar"
 import MainArea from "./Components/MatchesDetail/MatchesDetail";
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -20,7 +20,7 @@ function App() {
      
       <Sidebar showSidebar={showSidebar} />
       <MainArea/>
-      <LeftSidebar/>
+      <RightSidebar/>
 
       
       

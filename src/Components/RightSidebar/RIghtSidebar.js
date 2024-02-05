@@ -1,5 +1,5 @@
 import React from 'react';
-import "./LeftSidebar.css";
+import "./RightSidebar.css";
 import Maincard from './Maincard';
 import SmallCards from './SmallCards';
 

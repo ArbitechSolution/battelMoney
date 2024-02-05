@@ -1,3 +1,12 @@
+.center-div{
+    /* background-color: #202020; */
+    height: 89vh;
+    overflow-y: scroll;
+
+}
+.center-div::-webkit-scrollbar{
+    display:none;
+}
 .MainArea{
     background-color: #202020;
     min-height: 300px !important;
@@ -41,7 +50,8 @@
 /* -------------------matchdata----------- */
 .match-div{
     border-bottom: 1px solid #5a5858;
-    height: 70px;
+    min-height: 70px;
+    max-height: auto;
 }
 .schedule-btn{
     background-color: #5a5858;
@@ -67,13 +77,49 @@
     background-color:rgb(84, 84, 253) !important;
     color: white !important;
     border: none;
+    border-radius: 4px;
+    height:30px;
+    width:35px;
+    font-family: "mukta";
+    font-weight: 500;
 
 
 
 }
 .orange-btn{
     background-color:#e27e32 !important;
-    color: white;
+    color: white !important;
     border: none;
+    border-radius: 4px;
+    height:30px;
+    width:35px;
+    font-family: "mukta";
+    font-weight: 500;
+}
+@media screen and (max-width: 700px){
+    .blue-btn{
+        width: 60px;
+        margin-left: 5px;
+        margin-bottom: 3px;
+    }
+    .orange-btn{
+        width: 60px;
+        margin-bottom: 3px;
+    }
+
+
+}
+@media screen and (max-width: 450px){
+    .blue-btn{
+        width: 36px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        
+    }
+    .orange-btn{
+        width: 36px;
+        margin-bottom: 3px;
+    }
+
 
 }

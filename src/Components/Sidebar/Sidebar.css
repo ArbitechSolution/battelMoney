@@ -35,4 +35,15 @@
     border: none !important;
     opacity: 1;
   }
-  
+  .menu{
+    background-color: #302f2f;
+    color: white;
+    font-family: "mukta";
+    font-weight: 500;
+    border-top: 1px solid grey;
+    height : 30px;
+    
+  }
+  .manu p{
+    
+  }

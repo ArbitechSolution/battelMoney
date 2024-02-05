@@ -7,7 +7,7 @@ import football from "../../Media/6.png";
 
 const MainArea = () => {
   return (
-    <div className="col-lg-7 p-2">
+    <div className="col-lg-7 p-2 center-div">
       <SliderH />
       <div className="MainArea ">
         <div className="sport-div bg-dark row">
@@ -62,19 +62,22 @@ const MainArea = () => {
           </div>
           {/* <----------------------MatchData-----------------------> */}
           <div className="row match-div">
-            <div className="col-2 ">
-              <div className="schedule-btn ms-2 mt-2 pt-2 d-flex flex-column justify-content-center align-items-center">
+            
+            <div className="col-lg-7  d-flex">
+            <div className="schedule-btn ms-2 mt-2 pt-2 d-flex flex-column justify-content-center align-items-center">
                 Tommorow
                 <p>4:14 PM</p>
               </div>
-            </div>
-            <div className="col-5  ">
+              <div className="ms-3">
               <h6 className="match-name mt-2 mb-0">
                 ENGLAND U19 <span className="vs">V</span> ZImbabwew U19
               </h6>
               <span className="tournamnet-name mt-0">ICC U19 Worldcup</span>
+
+              </div>
+              
             </div>
-            <div className="col-5">
+            <div className="col-lg-5 order-3">
               <div className="row">
                 <div className="col-4">
                   <div className="mt-3">

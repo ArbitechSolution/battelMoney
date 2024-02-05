@@ -4,10 +4,10 @@ import "./Navbar.css";
 
 function Navbar({ toggleSidebar,showSidebar }) {
   return (
-    <nav className="navbar py-0 navbar-b d-block navbar-expand-lg navbar-dark bg-black">
+    <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6  order-lg-1 order-2 ">
+          <div className=" col-8 col-lg-3 col-sm-6  order-lg-1 order-2 ">
             <a className="navbar-brand" href="">
               <img className="navbar-brand ms-3" src={logo} alt="logo" />
             </a>
@@ -19,10 +19,10 @@ function Navbar({ toggleSidebar,showSidebar }) {
               <button className="nav-btns">LIVE TABLE</button>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-2  order-lg-3 order-3  order-xsm-3 d-flex justify-content-end pt-2 ">
+          <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end pt-2 ">
             <button className="signin-btn me-3">SignIn</button>
           </div>
-          <div className="col-lg-3 col-md-1 col-sm-2  order-lg-4 order-1 ">
+          <div className=" col-1 col-lg-3 col-sm-3   order-lg-4 order-1 ">
             {/* Toggler/collapsible Button */}
             <button
               className="navbar-toggler"
