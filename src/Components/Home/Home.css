@@ -1,0 +1,8 @@
+.home{
+    overflow-y: scroll;
+    height:89vh;
+    /* background-color: aqua !important; */
+}
+.home::-webkit-scrollbar{
+    display:none;
+}

@@ -3,9 +3,9 @@ import "./RightSidebar.css";
 import Maincard from './Maincard';
 import SmallCards from './SmallCards';
 
-const LeftSidebar = () => {
+const RightSidebar = () => {
   return (
-    <div className='col-lg-3 L-sidebar d-lg-block d-none'>
+    <div className='col-lg-4 L-sidebar d-lg-block d-none'>
         <div className='left-innerbar'>
         <div className='leftbar-h ms-1 '>
            
@@ -28,4 +28,4 @@ const LeftSidebar = () => {
   )
 }
 
-export default LeftSidebar
+export default RightSidebar

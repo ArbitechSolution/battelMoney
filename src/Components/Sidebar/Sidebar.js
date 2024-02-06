@@ -7,6 +7,7 @@ import tennis from "../../Media/4.png";
 import cricket from "../../Media/5.png";
 import football from "../../Media/6.png";
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
 
 function Sidebar({ showSidebar }) {
   const [item1, setItem1] = useState(false);
@@ -23,8 +24,12 @@ function Sidebar({ showSidebar }) {
           <ul className="list-group">
             <li className="list-group-item">
               <div className="d-flex">
+                <NavLink  className="nav-link" to="/Home">
+
+                
                 <img className=" side-icon" src={home} alt="h" />
                 <span className="ms-2">HOME</span>
+                </NavLink>
               </div>
             </li>
             <li className="list-group-item">
@@ -71,29 +76,15 @@ function Sidebar({ showSidebar }) {
             </li>
             {
               item1 &&
-              <div className="menu">
+              <NavLink className="nav-link" to="/Sport">
+                 <div className="menu">
               <p>Pakistan vs England</p>
 
-            {/* {
-                item1 &&
-                <ul>
-                <li>item2</li>
-                <li>item2</li>
-                <li onClick={()=>{setSubMenu(!subMenu)}}>item2
-                {
-                  subMenu && 
-                  <ul>
-                  <li>item4</li>
-                  <li>item4</li>
-                  <li>item4</li>
-                </ul>
-
-                }
-                  
-                </li>
-               </ul>  
-              } */}
+           
             </div>
+
+              </NavLink>
+             
             }
            
             

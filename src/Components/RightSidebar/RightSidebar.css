@@ -1,6 +1,7 @@
 .L-sidebar{
     background-color: #202020;
-    height: 89vh;
+    /* height: 89vh; */
+    /* width: 20%; */
     overflow-y: scroll;
 }
 .L-sidebar::-webkit-scrollbar{

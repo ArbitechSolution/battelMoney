@@ -1,6 +1,7 @@
 .center-div{
     /* background-color: #202020; */
     height: 89vh;
+    /* width: 50%; */
     overflow-y: scroll;
 
 }

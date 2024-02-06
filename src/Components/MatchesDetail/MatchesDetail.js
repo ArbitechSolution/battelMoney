@@ -5,9 +5,9 @@ import cricket from "../../Media/5.png";
 import tennis from "../../Media/4.png";
 import football from "../../Media/6.png";
 
-const MainArea = () => {
+const MatchesDetail = () => {
   return (
-    <div className="col-lg-7 p-2 center-div">
+    <div className=" col-lg-8 p-2 center-div">
       <SliderH />
       <div className="MainArea ">
         <div className="sport-div bg-dark row">
@@ -106,4 +106,4 @@ const MainArea = () => {
   );
 };
 
-export default MainArea;
+export default MatchesDetail;

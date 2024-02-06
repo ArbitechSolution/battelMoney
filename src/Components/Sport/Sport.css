@@ -1,0 +1,279 @@
+.score-card{
+    background-color: #1a1818;
+    height: 89vh;
+    border-radius: 7px;
+    /* overflow-y: scroll; */
+    
+    
+
+}
+.score-card-webkit-scrollbar{
+    display:none;
+}
+.match-name-div{
+    min-width: 250px;
+    width: 250px;
+    /* background-color: aqua; */
+    height: 60px;
+    max-width: auto;
+    /* max-width: auto; */
+}
+.match-name-btn{
+    
+        padding: 0 15px;
+        height: 34px;
+        color: #333;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: initial;
+        position: absolute;
+        margin-top: 15px;
+        /* top: 5px; */
+        /* left: 200px; */
+        background-color: #ff8a0c;
+        align-items: center;
+        display: flex;
+        border-radius: 25px;
+        z-index: 1;
+        -webkit-animation: puls 3s linear infinite;
+        animation: puls 3s linear infinite;
+        background: linear-gradient(to right, #f76904 0, #ff8c30 15%, #ff9b30 30%, #f78b04 55%, #ff8a0c 100%);
+        color: #FFF;
+        /* text-shadow: 1px 1px 3px rgb(0 0 0 / 50%); */
+        word-spacing: 3px;
+        border:none !important;
+    
+}
+.org-line{
+    
+     background-color: #ff8a0c;
+     color:#ff8c30;
+        /* position: relative; */
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        line-height: 1.5;
+        padding-top: 60px;
+        /* display: flex; */
+        justify-content: center;
+    
+    
+}
+.mn{
+    color:#f78b04;
+    font-family: "mukta";
+    font-weight: 500;
+    font-size: 17px;
+}
+.vs{
+    color: #ED213A;
+}
+.in-play-main-div{
+    color: white;
+}
+.blue-btn{
+    border:none;
+    background: linear-gradient(to right, #1368de 0, #4a8ff0 15%, #548ee0 30%, #1567d8 55%, #2869c3 100%) !important;
+}
+.main-score-card-div{
+     min-height: 150px;
+     width: 100%;
+}
+.batting-icon{
+    background-color: #f1e6e6;
+    color: white;
+    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+}
+.bat-icon-img{
+    height: 33px;
+}
+.team-a-name{
+    font-size: 27px;
+    color: white;
+    font-family: "mukta";
+    font-weight: 700;
+
+}
+.A-team-score{
+    font-size: 10px;
+    color: white;
+}
+.bd{
+    border: 1px solid white;
+}
+.stumps{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    font-family: "mukta";
+    font-weight:600;
+
+}
+.batter-info{
+    color: white;
+    font-size: 12px;
+}
+.over-ball-div{
+    height: 60px;
+    border-radius: 25px;
+    background-color: rgb(224, 217, 217);
+    width: 70%;
+
+
+}
+.single-info{
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "mukta";
+
+}
+.four-info{
+    background-color: rgb(98, 158, 7);
+    border-radius: 20px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "mukta";
+   
+}
+.six-info{
+    background-color: rgb(253, 228, 2);
+    border-radius: 20px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "mukta";
+   
+
+}
+.no-run-info{
+    
+    background-color: rgb(187, 180, 180);
+    border-radius: 20px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "mukta";
+
+
+}
+.betting-info{
+    border-bottom: 2px solid #ff8a0c;
+
+}
+.betting-info-btn{
+    /* background-color: #cfc3c3; */
+    border:none;
+    height: 37px;
+    color: white;
+    font-size: 14px;
+    font-family: "mukta";
+    
+    
+    
+}
+
+.Match-ods-h{
+    background-color: #333;
+    font-family: "mukta";
+    font-weight: 700;
+    height: 35px;
+    color: white;
+}
+.betting-team-info{
+    margin-top: 20px;
+    border-top: 1px solid rgb(146, 137, 137);
+    background-color: #0f0e0e;
+    height: 55px;
+
+} 
+.betting-t-n{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+
+
+
+}
+.back{
+    background-color: #089CF1;
+    border: none;
+    color: white;
+    font-family: "mukta";
+    border-radius: 3px;
+    width: 65px
+}
+.lay{
+    background-color: #F4913B;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-family: "mukta";
+    width: 65px;
+}
+.zero{
+    color: light greenyellow !important;
+}
+.blue-bet-btn{
+    background-color: #089CF1;
+    border: none;
+    color: white;
+    font-family: "mukta";
+    border-radius: 3px;
+    width: 65px;
+    height: 50px;
+
+}
+.orange-bet-btn{
+    background-color: #F4913B;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-family: "mukta";
+    width: 65px;
+    height: 50px;
+}
+
+       
+@media screen and (max-width: 600px){
+    .batting-icon{
+        background-color: #f1e6e6;
+        color: white;
+        border-radius: 50px;
+        width: 30px;
+        height: 28px;
+    }
+    .bat-icon-img{
+        height: 20px;
+    }
+    .team-a-name{
+        font-size: 13px;
+        color: white;
+        font-family: "mukta";
+        font-weight: 500;
+    
+    }
+    
+
+}
