@@ -64,18 +64,18 @@ const ScoreCard = () => {
                 </div>
                 <div className="col-5">
                 <div className="row">
-                <div className="col-7 d-flex flex-column justify-content-center align-items-center  bd">
+                <div className="col-7 d-flex flex-column justify-content-center align-items-center  ">
                         <p className="team-a-name mb-0">179-4</p>
                         <p className="A-team-score mt-0">43.0 OV & 511-10(144.0)</p>
                            
 
                         </div>
-                        <div className="col-2 bd d-flex justify-content-center  ">
+                        <div className="col-2  d-flex justify-content-center  ">
                             <p className="team-a-name mt-3">NZ</p>
 
                         </div>
 
-                        <div className="col-3 bd p-2  ">
+                        <div className="col-3  p-2  ">
                             <div className="batting-icon d-flex justify-content-center align-items-center ms-1">
                                 <img className="bat-icon-img" src={bowling} alt="."/>
                                 
