@@ -24,7 +24,7 @@ function Sidebar({ showSidebar }) {
           <ul className="list-group">
             <li className="list-group-item">
               <div className="d-flex">
-                <NavLink  className="nav-link" to="/Home">
+                <NavLink  className="nav-link" to="/">
 
                 
                 <img className=" side-icon" src={home} alt="h" />
@@ -34,8 +34,12 @@ function Sidebar({ showSidebar }) {
             </li>
             <li className="list-group-item">
               <div className="d-flex">
+                <NavLink className="nav-link" to="/sport">
                 <img className=" side-icon" src={inplay} alt="h" />
                 <span className="ms-2">IN-PLAY</span>
+
+                </NavLink>
+                
               </div>
             </li>
             <li className="list-group-item">

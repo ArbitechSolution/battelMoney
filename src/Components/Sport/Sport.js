@@ -2,6 +2,7 @@ import React from 'react'
 import ScoreCard from './ScoreCard';
 import "./Sport.css";
 import BettingCard from './BettingCard';
+import LiveTvSection from './LiveTvSection';
 
 const Sport = () => {
   return (
@@ -15,7 +16,7 @@ const Sport = () => {
 
             </div>
             <div className='col-4'>
-
+                <LiveTvSection/>
             </div>
 
         </div>
