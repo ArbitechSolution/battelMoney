@@ -61,6 +61,7 @@ function Sidebar({ showSidebar }) {
               <div className="d-flex">
                 <img className=" side-icon" src={cricket} alt="h" />
                 <span className="ms-2">CRICKET</span>
+                
               </div>
             </li>
             <li className="list-group-item">

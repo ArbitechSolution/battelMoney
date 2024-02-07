@@ -32,3 +32,72 @@ nav{
   .nav-btns:hover{
     background: linear-gradient(to right, #fa5004 0%, #fd740d 51%, #fa5004 100%);
   }
+
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  /* background-color: #2980b9; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 30%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* height: 70px; */
+  font-size: 13px;;
+  /* height: 20px; */
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 9px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color: #2980b9; */
+}
+.person-icon-div{
+  background-color: #fa5004;
+  border-radius: 17px;
+  color:black;
+  height: 28px;
+  width: 28px;
+
+}
+.p-icon{
+ /* font-size: 15px; */
+}

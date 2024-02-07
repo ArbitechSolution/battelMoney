@@ -1,8 +1,18 @@
 import React from "react";
 import logo from "../../Media/logo4.png";
 import "./Navbar.css";
-
-function Navbar({ toggleSidebar,showSidebar }) {
+import { BsFillPersonFill } from "react-icons/bs";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
+import { MdLeaderboard } from "react-icons/md";
+import { IoMdSwap } from "react-icons/io";
+import { FaCreditCard } from "react-icons/fa";
+import { FaList } from "react-icons/fa";
+import { MdPayments } from "react-icons/md";
+import { IoMdTrendingUp } from "react-icons/io";
+import { MdOutlineLegendToggle } from "react-icons/md";
+import { MdOutlineMemory } from "react-icons/md";
+function Navbar({ toggleSidebar, showSidebar }) {
   return (
     <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">
@@ -21,6 +31,41 @@ function Navbar({ toggleSidebar,showSidebar }) {
           </div>
           <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end pt-2 ">
             <button className="signin-btn me-3">SignIn</button>
+            <div class="dropdown">
+  <button class="dropbtn d-flex"><div className="person-icon-div"><BsFillPersonFill className="p-icon" /></div><IoMdArrowDropdown  className="mt-2"/></button>
+  <div class="dropdown-content">
+    <NavLink href="#"><div  className="d-flex justify-content-between ">MY MARKEET
+    <MdLeaderboard /></div></NavLink>
+    <NavLink href="#">
+      <div className="d-flex justify-content-between">BETTING HISTORY
+      <MdLeaderboard /> </div></NavLink>
+    <NavLink href="#"><div className="d-flex justify-content-between">FUND TRANSFER<IoMdSwap /></div></NavLink>
+    <NavLink href="#"><div className="d-flex justify-content-between">WITHDRAWEL USDT<FaCreditCard />
+      </div></NavLink>
+    <NavLink href="#"><div className="d-flex justify-content-between">DEPOSIT
+    <FaCreditCard /> </div></NavLink>
+    <NavLink to="/">
+      <div className="d-flex justify-content-between">
+      WITHDRAWAL HISTORY <FaList /> </div></NavLink>
+    <NavLink to="/">
+      <div className="d-flex justify-content-between">ACCOUNT STATEMENT <MdPayments /> </div></NavLink>
+    <NavLink to="/"><div className="d-flex justify-content- between" >TRANSACTION HISTORY<IoMdTrendingUp /></div></NavLink>
+    <NavLink to="/"><div className="d-flex justify-content-between">PROFIT-LOSS<MdOutlineLegendToggle /></div></NavLink>
+    <NavLink to="/"><div className="d-flex justify-content-between">STAKE SETTING<MdOutlineMemory /></div></NavLink>
+    <NavLink to="/"><div className="d-flex justify-content-between">CASINO RESULTS
+    <MdLeaderboard /></div></NavLink>
+    
+
+    
+   
+   
+  </div>
+</div>
+
+
+         
+            
+           
           </div>
           <div className=" col-1 col-lg-3 col-sm-3   order-lg-4 order-1 ">
             {/* Toggler/collapsible Button */}
@@ -32,7 +77,7 @@ function Navbar({ toggleSidebar,showSidebar }) {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            {/* Navbar links */} 
+            {/* Navbar links */}
             <div
               className={`collapse navbar-collapse${
                 showSidebar ? " show" : ""
