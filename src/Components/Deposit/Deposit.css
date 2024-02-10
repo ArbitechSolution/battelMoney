@@ -1,0 +1,61 @@
+.funds-transfer-main-div{
+    background-color: rgb(20, 19, 19);
+    height: 86vh;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.F-h{
+    font-weight: 700;
+    color: white ;
+    font-size: 20px;
+    
+    
+}
+.form-area{
+    border-top: 1px solid rgb(66, 61, 61);
+}
+.deposit-card{
+    height: 420px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid rgb(99, 96, 96);
+    color: white;
+}
+.balance-div{
+    
+}
+.balance-h{
+    color: white;
+    font-size: 14px;
+}
+.b-o{
+    color:#fa5004;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "mukta";
+}
+label{
+    font-size: 11px;
+
+}
+.user-id-input{
+    background-color:rgb(102, 146, 146);
+}
+
+.transfer-btn{
+    width: 100%;
+    background-color: #fa5004;
+    color: white;
+}
+@media screen and (max-width: 490px){
+    .deposit-card{
+        height: 420px;
+        width: 340px;
+        background-color: black;
+        border: 1px solid rgb(99, 96, 96);
+        color: white;
+    }
+
+
+}

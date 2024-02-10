@@ -14,7 +14,7 @@ function Sidebar({ showSidebar }) {
   const [subMenu,setSubMenu]= useState(false);
   return (
     <div
-      className={`sidebar side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${
+      className={`sidebar   side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${
         showSidebar ? " d-block" : " d-none"
       }`}
     >

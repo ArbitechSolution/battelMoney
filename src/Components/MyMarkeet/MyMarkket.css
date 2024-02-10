@@ -1,0 +1,26 @@
+.bet-h{
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    background-color: #201f1f;
+    color: white;
+    border-radius: 5px;;
+
+}
+.bet-h h4{
+    color: white;
+    font-weight: 700;
+    font-family: "mukta";
+}
+.bd{
+    border: 1px solid #666;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "mukta";
+    
+}
+.record{
+    font-weight: 600;
+    font-family: "mukta";
+}

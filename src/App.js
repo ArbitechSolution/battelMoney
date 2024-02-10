@@ -9,7 +9,18 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import MainArea from "./Components/MatchesDetail/MatchesDetail";
 import Home from "./Components/Home/Home";
 import Sport from "./Components/Sport/Sport";
+import MyMarkeet from "./Components/MyMarkeet/MyMarkeet";
+import BettingHistory from "./Components/BettingHistory/BettingHistory";
+import FundsTransfer from "./Components/FundsTransfer/FundsTransfer";
+import WithdrawHistory from "./Components/WithdrawHistory/WithdrawHistory";
+// import WithDrawalUSDT from "./Components/WithdrawelUSDT/WithDrawalUSDT";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import WithDrawalUSDT from "./Components/WithdrawelUSDT/WithDrawalUSDT";
+import AccountStatement from "./Components/AccountStatement/AccountStatement";
+import TransactionHistory from "./Components/TransactionHistory/TransactionHistory";
+import ProfitLoss from "./Components/ProfitLoss/ProfitLoss";
+import CasinoResults from "./Components/CasinoResults/CasinoResults";
+import Deposit from "./Components/Deposit/Deposit";
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -18,7 +29,7 @@ const App = ()=> {
   };
 
   return (
-    <div className="bg-black row">
+    <div className="bg-black row app-row ">
       <BrowserRouter>
       <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
@@ -27,6 +38,16 @@ const App = ()=> {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Sport" element={<Sport/>}/>
+        <Route path="/MyMarkeet" element={<MyMarkeet/>}/>
+        <Route path="/BettingHistory" element={<BettingHistory/>}/>
+        <Route path="/FundsTransfer" element={<FundsTransfer/>}/>
+        <Route path="/WithdrawalUSDT" element={<WithDrawalUSDT/>}/>
+        <Route path="/WithdrawalHistory" element={<WithdrawHistory/>}/>
+        <Route path="/AccountStatement" element={<AccountStatement/>}/>
+       <Route path="/TransactionHistory" element={<TransactionHistory/>}/>
+       <Route path="/ProfitLoss" element={<ProfitLoss/>}/>
+       <Route  path="/CasinoResults" element={<CasinoResults/>}/>
+       <Route path="/Deposit" element={<Deposit/>}/>
 
       </Routes>
       </BrowserRouter>

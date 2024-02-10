@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(43, 38, 38);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+select {
+    /* padding: ; */
+    font-size: 16px;
+    height: 37px;
+    border: none;
+    background-color: rgb(44, 40, 40);
+    color: white;
+}
+option {
+    background-color: black;
+    color: white;
+    /* padding-top: 0; */
+
+}

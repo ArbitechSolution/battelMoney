@@ -34,25 +34,25 @@ function Navbar({ toggleSidebar, showSidebar }) {
             <div class="dropdown">
   <button class="dropbtn d-flex"><div className="person-icon-div"><BsFillPersonFill className="p-icon" /></div><IoMdArrowDropdown  className="mt-2"/></button>
   <div class="dropdown-content">
-    <NavLink href="#"><div  className="d-flex justify-content-between ">MY MARKEET
+    <NavLink to="/MyMarkeet"><div  className="d-flex justify-content-between ">MY MARKEET
     <MdLeaderboard /></div></NavLink>
-    <NavLink href="#">
+    <NavLink to="/BettingHistory">
       <div className="d-flex justify-content-between">BETTING HISTORY
       <MdLeaderboard /> </div></NavLink>
-    <NavLink href="#"><div className="d-flex justify-content-between">FUND TRANSFER<IoMdSwap /></div></NavLink>
-    <NavLink href="#"><div className="d-flex justify-content-between">WITHDRAWEL USDT<FaCreditCard />
+    <NavLink to="/FundsTransfer"><div className="d-flex justify-content-between">FUND TRANSFER<IoMdSwap /></div></NavLink>
+    <NavLink to="/WithdrawalUSDT"><div className="d-flex justify-content-between">WITHDRAWEL USDT<FaCreditCard />
       </div></NavLink>
-    <NavLink href="#"><div className="d-flex justify-content-between">DEPOSIT
+    <NavLink to="/Deposit"><div className="d-flex justify-content-between">DEPOSIT
     <FaCreditCard /> </div></NavLink>
-    <NavLink to="/">
+    <NavLink to="/WithdrawalHistory">
       <div className="d-flex justify-content-between">
       WITHDRAWAL HISTORY <FaList /> </div></NavLink>
-    <NavLink to="/">
+    <NavLink to="/AccountStatement">
       <div className="d-flex justify-content-between">ACCOUNT STATEMENT <MdPayments /> </div></NavLink>
-    <NavLink to="/"><div className="d-flex justify-content- between" >TRANSACTION HISTORY<IoMdTrendingUp /></div></NavLink>
-    <NavLink to="/"><div className="d-flex justify-content-between">PROFIT-LOSS<MdOutlineLegendToggle /></div></NavLink>
+    <NavLink to="/TransactionHistory"><div className="d-flex justify-content- between" >TRANSACTION HISTORY<IoMdTrendingUp /></div></NavLink>
+    <NavLink to="/ProfitLoss"><div className="d-flex justify-content-between">PROFIT-LOSS<MdOutlineLegendToggle /></div></NavLink>
     <NavLink to="/"><div className="d-flex justify-content-between">STAKE SETTING<MdOutlineMemory /></div></NavLink>
-    <NavLink to="/"><div className="d-flex justify-content-between">CASINO RESULTS
+    <NavLink to="/CasinoResults"><div className="d-flex justify-content-between">CASINO RESULTS
     <MdLeaderboard /></div></NavLink>
     
 
@@ -70,7 +70,7 @@ function Navbar({ toggleSidebar, showSidebar }) {
           <div className=" col-1 col-lg-3 col-sm-3   order-lg-4 order-1 ">
             {/* Toggler/collapsible Button */}
             <button
-              className="navbar-toggler"
+              className="navbar-toggler mt-2 border-none"
               type="button"
               onClick={toggleSidebar}
             >

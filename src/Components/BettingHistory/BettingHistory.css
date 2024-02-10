@@ -1,0 +1,28 @@
+.com-h{
+    min-height: 88vh;
+}
+.dates-div{
+    width: 100%;
+    background-color:  rgb(48, 45, 45);
+    font-size: 14px;
+    font-family: "mukta";
+    font-weight: 600;
+    color: white
+}
+.from{
+    background-color:rgb(63, 60, 60);
+    height:35px;
+    width:40px;
+    /* border-radius: 3px; */
+
+}
+.dates-div input{
+    background-color:rgb(37, 35, 35);
+    height:35px;
+    width:220px;
+    /* border-radius: 3px; */
+    border: none;
+    color: white !important;
+    border-color: lightgray;
+
+}
