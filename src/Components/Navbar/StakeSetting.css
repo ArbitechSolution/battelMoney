@@ -1,0 +1,62 @@
+.modal-container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #bebebe; */
+    opacity: .4;
+    position: fixed;
+    inset: 0;
+}.modal-body{
+    position: fixed;
+    inset:40;
+    padding:10;
+    top:10%;
+    left:36%;
+    max-width: 60%;
+    background-color: white;
+}
+.modal-card{
+    background-color: rgb(34, 30, 30);
+    height: 380px;
+    width: 450px;
+    /* border-radius: 10px;; */
+}
+.modal-p{
+    color: white;
+    font-size: 15px;
+    font-family: "mukta";
+}
+.h-div{
+    border-bottom: 1px solid white;;
+}
+.cross-btn{
+    background-color: rgb(34, 30, 30);
+    color: white;
+    border: none;
+    /* width: 20px; */
+    float: right;
+    margin-top: 0px;
+    /* width: 30px; */
+}
+.cross-icon{
+ color: white;
+ height: 10px;
+
+
+}
+.modal-input{
+    outline: none !important;
+    border: none !important;
+    background-color:rgb(29, 25, 25) ;
+    height: 35px;
+    border-radius: 5px;
+    color: white !important;
+
+}
+.modal-input:hover{
+    translate: 3px 0px 0px;
+    transition: .5s ease;
+    border-bottom: 2px solid #fa5004 !important;
+}
+.update-div{
+    border-top: 1px solid white !important;
+}

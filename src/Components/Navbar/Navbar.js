@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../Media/logo4.png";
 import "./Navbar.css";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -12,7 +12,16 @@ import { MdPayments } from "react-icons/md";
 import { IoMdTrendingUp } from "react-icons/io";
 import { MdOutlineLegendToggle } from "react-icons/md";
 import { MdOutlineMemory } from "react-icons/md";
+import { FaKey } from "react-icons/fa";
+import StakeSettingModal from "./StakeSettingModal";
 function Navbar({ toggleSidebar, showSidebar }) {
+  const [modal,setModal]= useState(false);
+  const displayModal = ()=>{
+    setModal(true)
+  }
+  const closeModal = ()=>{
+    setModal(false);
+  }
   return (
     <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">
@@ -51,9 +60,12 @@ function Navbar({ toggleSidebar, showSidebar }) {
       <div className="d-flex justify-content-between">ACCOUNT STATEMENT <MdPayments /> </div></NavLink>
     <NavLink to="/TransactionHistory"><div className="d-flex justify-content- between" >TRANSACTION HISTORY<IoMdTrendingUp /></div></NavLink>
     <NavLink to="/ProfitLoss"><div className="d-flex justify-content-between">PROFIT-LOSS<MdOutlineLegendToggle /></div></NavLink>
-    <NavLink to="/"><div className="d-flex justify-content-between">STAKE SETTING<MdOutlineMemory /></div></NavLink>
+    <NavLink><div onClick={()=> displayModal()} className="d-flex justify-content-between">STAKE SETTING<MdOutlineMemory /></div></NavLink>
+    {modal &&  <StakeSettingModal closeModal={closeModal}/> }
     <NavLink to="/CasinoResults"><div className="d-flex justify-content-between">CASINO RESULTS
     <MdLeaderboard /></div></NavLink>
+    <NavLink to="/ChangePassword"><div className="d-flex justify-content-between">CHANGE PASSWORD
+    <FaKey /></div></NavLink>
     
 
     

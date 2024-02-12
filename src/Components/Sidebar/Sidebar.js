@@ -44,8 +44,10 @@ function Sidebar({ showSidebar }) {
             </li>
             <li className="list-group-item">
               <div className="d-flex">
+                <NavLink className="nav-link" to="/LiveCasino">
                 <img className=" side-icon" src={casino} alt="h" />
                 <span className="ms-2">LIVE CASINO</span>
+                </NavLink>
               </div>
             </li>
           </ul>

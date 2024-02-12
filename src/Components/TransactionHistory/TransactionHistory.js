@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./Transaction.css"
 
 const TransactionHistory = () => {
   return (
@@ -59,11 +60,17 @@ const TransactionHistory = () => {
              
           </div>
           
-          <div className="record p-2">
+          
+          {/* <div className="record p-2">
             <h6>NO RECORD!!!</h6>
-          </div>
+          </div> */}
           
         </div>
+        <div className='d-flex  mt-2'>
+            <div className='deposit-btn'> Total Deposit : <span>0</span></div>
+            <div className='withdrawal-btn ms-2'>Total Withdrawal : <span>0</span></div>
+
+          </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,55 @@
+.casinocard-div{
+    width: 180px;
+    background-color: #202020;
+    border-radius: 5px;
+    border:none;
+    
+  }
+  .small-card-img{
+    border-radius: 5px;
+  }
+  .overlaySmallCard{
+    position:absolute;
+    bottom:0;
+    overflow: hidden;
+    left:0;
+    right:0;
+    height:0;
+    background-color: rgba(70, 67, 67, 0.75);
+    border-radius: 5px;
+
+  
+}
+.overlaySmallCard p{
+    color: rgb(221, 221, 221) !important;
+    font: "mukta";
+    font-size: 12px;
+    font-weight: 600;
+    /* margin-left: 36px; */
+    margin-top: 30px;
+}
+
+.casinocard-div:hover{
+    
+    /* translate: 0px 15px 0px; */
+    transition: .5s ease;
+}
+.casinocard-div:hover .overlaySmallCard{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+
+
+}
+@media screen and (max-width: 550px){
+    .casinocard-div{
+        width: 140px;
+        background-color: #202020;
+        border-radius: 5px;
+        border:none;
+       
+    }
+
+
+}
+

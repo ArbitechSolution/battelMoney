@@ -20,7 +20,9 @@ import AccountStatement from "./Components/AccountStatement/AccountStatement";
 import TransactionHistory from "./Components/TransactionHistory/TransactionHistory";
 import ProfitLoss from "./Components/ProfitLoss/ProfitLoss";
 import CasinoResults from "./Components/CasinoResults/CasinoResults";
+import LiveCasino from "./Components/LiveCasino/LiveCasino";
 import Deposit from "./Components/Deposit/Deposit";
+import ChangePassword from "./Components/ChangePassword/ChangePassword";
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -48,6 +50,8 @@ const App = ()=> {
        <Route path="/ProfitLoss" element={<ProfitLoss/>}/>
        <Route  path="/CasinoResults" element={<CasinoResults/>}/>
        <Route path="/Deposit" element={<Deposit/>}/>
+       <Route path="/ChangePassword" element={<ChangePassword/>}/>
+       <Route path="/LiveCasino" element={<LiveCasino/>}/>
 
       </Routes>
       </BrowserRouter>

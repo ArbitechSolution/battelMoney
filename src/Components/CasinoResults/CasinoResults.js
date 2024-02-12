@@ -55,27 +55,34 @@ const CasinoResults = () => {
               
               
           </div>
-          <div className="d-flex justify-content-between ">
-            <div className="bd">
-              <p className="ms-2 mt-2">No.</p>
-            </div>
-            <div className="bd d-flex align-items-center">
-              <p className="ms-2 mt-2">Date Time</p>
-            </div>
-            <div className="bd">
-              <p className="ms-2 mt-2">Credit</p>
-            </div>
-            <div className="bd">
-              <p className="ms-2 mt-2">Debit</p>
-            </div>
-            <div className="bd">
-              <p>Closing Bal.</p>
-            </div>
-            <div className="bd">
-              <p className="ms-2 mt-2">Naration</p>
-            </div>
-           
-          </div>
+          <table class="table table-dark table-striped bd">
+              <thead>
+                <tr>
+                  <th scope="col">ROUND ID</th>
+                  <th scope="col">RESULT</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                {/* <tr>
+      <th scope="row">1</th>
+      <td>Match</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr> */}
+              </tbody>
+            </table>
           <div className="record p-2">
             <h6>NO RECORD!!!</h6>
           </div>

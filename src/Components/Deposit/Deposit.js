@@ -18,10 +18,15 @@ const Deposit = () => {
                   <p className="b-o ms-3 ">STEP 1:</p>
                   <p className="balance-h mb-0 ms-3">Transfer the amount below given scaner</p>
                 </div>
+                <div className="mb-0 d-flex">
+                  
+                  <p className="b-o ms-3 ">STEP2:</p>
+                  <p className="balance-h mb-0 ms-3">Enter wallet address amount and trasaction id below and upload the transaction slip </p>
+                </div>
 
                 <div className="px-4">
                   <form>
-                   <div className='row'>
+                   <div className='row mt-2'>
                    
                     <div className='col-md-6 px-1'>
                     <div class="form-group">

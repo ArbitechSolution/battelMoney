@@ -58,23 +58,36 @@ const ProfitLoss = () => {
              
               
           </div>
-          <div className="d-flex justify-content-between ">
-            <div className="bd">
-              <p className="ms-2 mt-2">MARKEET</p>
-            </div>
-            <div className="bd d-flex align-items-center">
-              <p className="ms-2 mt-2">START TIME</p>
-            </div>
-            <div className="bd">
-              <p className="ms-2 mt-2">SETTELED DATE</p>
-            </div>
-            <div className="bd">
-              <p className="ms-2 mt-2">PROFIT&LOSS</p>
-            </div>
-            
-            
-            
-          </div>
+          <table class="table table-dark table-striped bd">
+              <thead>
+                <tr>
+                  <th scope="col">MARKEET</th>
+                  <th scope="col">START TIME</th>
+                  <th scope="col">SETTELED TIME</th>
+                  <th scope="col">PROFIT/LOSS</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                {/* <tr>
+      <th scope="row">1</th>
+      <td>Match</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr> */}
+              </tbody>
+            </table>
           <div className="record p-2">
             <h6>You have no bets in this time period</h6>
           </div>
