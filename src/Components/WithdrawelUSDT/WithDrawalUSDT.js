@@ -5,8 +5,8 @@ const WithDrawalUSDT = () => {
   return (
     <div className="col-lg-10">
     <div className="row">
-      <div className="col-12 p-2">
-        <div className="withdrawal-main-div ">
+      <div className="col-12 px-2 ">
+        <div className="withdrawal-main-div mt-1">
           <div className="F-h p-2 pb-0">
             <p className="ms-3">USDT WithDrawal</p>
           </div>

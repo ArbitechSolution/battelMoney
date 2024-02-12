@@ -15,13 +15,13 @@ import { MdOutlineMemory } from "react-icons/md";
 import { FaKey } from "react-icons/fa";
 import StakeSettingModal from "./StakeSettingModal";
 function Navbar({ toggleSidebar, showSidebar }) {
-  const [modal,setModal]= useState(false);
-  const displayModal = ()=>{
-    setModal(true)
-  }
-  const closeModal = ()=>{
+  const [modal, setModal] = useState(false);
+  const displayModal = () => {
+    setModal(true);
+  };
+  const closeModal = () => {
     setModal(false);
-  }
+  };
   return (
     <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">
@@ -41,43 +41,89 @@ function Navbar({ toggleSidebar, showSidebar }) {
           <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end pt-2 ">
             <button className="signin-btn me-3">SignIn</button>
             <div class="dropdown">
-  <button class="dropbtn d-flex"><div className="person-icon-div"><BsFillPersonFill className="p-icon" /></div><IoMdArrowDropdown  className="mt-2"/></button>
-  <div class="dropdown-content">
-    <NavLink to="/MyMarkeet"><div  className="d-flex justify-content-between ">MY MARKEET
-    <MdLeaderboard /></div></NavLink>
-    <NavLink to="/BettingHistory">
-      <div className="d-flex justify-content-between">BETTING HISTORY
-      <MdLeaderboard /> </div></NavLink>
-    <NavLink to="/FundsTransfer"><div className="d-flex justify-content-between">FUND TRANSFER<IoMdSwap /></div></NavLink>
-    <NavLink to="/WithdrawalUSDT"><div className="d-flex justify-content-between">WITHDRAWEL USDT<FaCreditCard />
-      </div></NavLink>
-    <NavLink to="/Deposit"><div className="d-flex justify-content-between">DEPOSIT
-    <FaCreditCard /> </div></NavLink>
-    <NavLink to="/WithdrawalHistory">
-      <div className="d-flex justify-content-between">
-      WITHDRAWAL HISTORY <FaList /> </div></NavLink>
-    <NavLink to="/AccountStatement">
-      <div className="d-flex justify-content-between">ACCOUNT STATEMENT <MdPayments /> </div></NavLink>
-    <NavLink to="/TransactionHistory"><div className="d-flex justify-content- between" >TRANSACTION HISTORY<IoMdTrendingUp /></div></NavLink>
-    <NavLink to="/ProfitLoss"><div className="d-flex justify-content-between">PROFIT-LOSS<MdOutlineLegendToggle /></div></NavLink>
-    <NavLink><div onClick={()=> displayModal()} className="d-flex justify-content-between">STAKE SETTING<MdOutlineMemory /></div></NavLink>
-    {modal &&  <StakeSettingModal closeModal={closeModal}/> }
-    <NavLink to="/CasinoResults"><div className="d-flex justify-content-between">CASINO RESULTS
-    <MdLeaderboard /></div></NavLink>
-    <NavLink to="/ChangePassword"><div className="d-flex justify-content-between">CHANGE PASSWORD
-    <FaKey /></div></NavLink>
-    
-
-    
-   
-   
-  </div>
-</div>
-
-
-         
-            
-           
+              <button class="dropbtn d-flex">
+                <div className="person-icon-div">
+                  <BsFillPersonFill className="p-icon" />
+                </div>
+                <IoMdArrowDropdown className="mt-2" />
+              </button>
+              <div class="dropdown-content">
+                <NavLink to="/MyMarkeet">
+                  <div className="d-flex justify-content-between ">
+                    MY MARKEET
+                    <MdLeaderboard />
+                  </div>
+                </NavLink>
+                <NavLink to="/BettingHistory">
+                  <div className="d-flex justify-content-between">
+                    BETTING HISTORY
+                    <MdLeaderboard />{" "}
+                  </div>
+                </NavLink>
+                <NavLink to="/FundsTransfer">
+                  <div className="d-flex justify-content-between">
+                    FUND TRANSFER
+                    <IoMdSwap />
+                  </div>
+                </NavLink>
+                <NavLink to="/WithdrawalUSDT">
+                  <div className="d-flex justify-content-between">
+                    WITHDRAWEL USDT
+                    <FaCreditCard />
+                  </div>
+                </NavLink>
+                <NavLink to="/Deposit">
+                  <div className="d-flex justify-content-between">
+                    DEPOSIT
+                    <FaCreditCard />{" "}
+                  </div>
+                </NavLink>
+                <NavLink to="/WithdrawalHistory">
+                  <div className="d-flex justify-content-between">
+                    WITHDRAWAL HISTORY <FaList />{" "}
+                  </div>
+                </NavLink>
+                <NavLink to="/AccountStatement">
+                  <div className="d-flex justify-content-between">
+                    ACCOUNT STATEMENT <MdPayments />{" "}
+                  </div>
+                </NavLink>
+                <NavLink to="/TransactionHistory">
+                  <div className="d-flex justify-content- between">
+                    TRANSACTION HISTORY
+                    <IoMdTrendingUp />
+                  </div>
+                </NavLink>
+                <NavLink to="/ProfitLoss">
+                  <div className="d-flex justify-content-between">
+                    PROFIT-LOSS
+                    <MdOutlineLegendToggle />
+                  </div>
+                </NavLink>
+                <NavLink>
+                  <div
+                    onClick={() => displayModal()}
+                    className="d-flex justify-content-between"
+                  >
+                    STAKE SETTING
+                    <MdOutlineMemory />
+                  </div>
+                </NavLink>
+                {modal && <StakeSettingModal closeModal={closeModal} />}
+                <NavLink to="/CasinoResults">
+                  <div className="d-flex justify-content-between">
+                    CASINO RESULTS
+                    <MdLeaderboard />
+                  </div>
+                </NavLink>
+                <NavLink to="/ChangePassword">
+                  <div className="d-flex justify-content-between">
+                    CHANGE PASSWORD
+                    <FaKey />
+                  </div>
+                </NavLink>
+              </div>
+            </div>
           </div>
           <div className=" col-1 col-lg-3 col-sm-3   order-lg-4 order-1 ">
             {/* Toggler/collapsible Button */}

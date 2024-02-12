@@ -13,6 +13,7 @@ import MyMarkeet from "./Components/MyMarkeet/MyMarkeet";
 import BettingHistory from "./Components/BettingHistory/BettingHistory";
 import FundsTransfer from "./Components/FundsTransfer/FundsTransfer";
 import WithdrawHistory from "./Components/WithdrawHistory/WithdrawHistory";
+import Login from "./Components/Login/Login";
 // import WithDrawalUSDT from "./Components/WithdrawelUSDT/WithDrawalUSDT";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import WithDrawalUSDT from "./Components/WithdrawelUSDT/WithDrawalUSDT";
@@ -33,9 +34,10 @@ const App = ()=> {
   return (
     <div className="bg-black row app-row ">
       <BrowserRouter>
-      <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
+      <Login />
+      {/* <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
-     <Sidebar showSidebar={showSidebar} />
+     <Sidebar showSidebar={showSidebar} /> */}
 
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -46,12 +48,13 @@ const App = ()=> {
         <Route path="/WithdrawalUSDT" element={<WithDrawalUSDT/>}/>
         <Route path="/WithdrawalHistory" element={<WithdrawHistory/>}/>
         <Route path="/AccountStatement" element={<AccountStatement/>}/>
-       <Route path="/TransactionHistory" element={<TransactionHistory/>}/>
-       <Route path="/ProfitLoss" element={<ProfitLoss/>}/>
-       <Route  path="/CasinoResults" element={<CasinoResults/>}/>
-       <Route path="/Deposit" element={<Deposit/>}/>
-       <Route path="/ChangePassword" element={<ChangePassword/>}/>
-       <Route path="/LiveCasino" element={<LiveCasino/>}/>
+        <Route path="/TransactionHistory" element={<TransactionHistory/>}/>
+        <Route path="/ProfitLoss" element={<ProfitLoss/>}/>
+        <Route path="/CasinoResults" element={<CasinoResults/>}/>
+        <Route path="/Deposit" element={<Deposit/>}/>
+        <Route path="/ChangePassword" element={<ChangePassword/>}/>
+        <Route path="/LiveCasino" element={<LiveCasino/>}/>
+        <Route path="/Login" element={<Login/>}/>
 
       </Routes>
       </BrowserRouter>
