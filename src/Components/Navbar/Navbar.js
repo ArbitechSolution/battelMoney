@@ -38,10 +38,11 @@ function Navbar({ toggleSidebar, showSidebar }) {
               <button className="nav-btns">LIVE TABLE</button>
             </div>
           </div>
-          <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end pt-2 ">
-            <button className="signin-btn me-3">SignIn</button>
-            <div class="dropdown">
-              <button class="dropbtn d-flex">
+          <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end  ">
+            <NavLink to="/Login"><button className="signin-btn mt-2  me-3">SignIn</button></NavLink>
+            <NavLink to="/Login"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
+            <div class="dropdown mt-0">
+              <button class="dropbtn mt-2 pt-0 d-flex">
                 <div className="person-icon-div">
                   <BsFillPersonFill className="p-icon" />
                 </div>

@@ -1,6 +1,6 @@
 .home{
     overflow-y: scroll;
-    height:89vh;
+    height:88vh;
     /* background-color: aqua !important; */
 }
 .home::-webkit-scrollbar{

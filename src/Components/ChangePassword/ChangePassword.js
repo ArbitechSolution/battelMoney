@@ -5,7 +5,7 @@ const ChangePassword = () => {
   return (
     <div className="col-lg-10">
       <div className="row">
-        <div className="col-12 p-2">
+        <div className="col-12 p-1 px-2">
           <div className="funds-transfer-main-div ">
             <div className="F-h p-2 pb-0">
               <p className="ms-3">Change Password</p>

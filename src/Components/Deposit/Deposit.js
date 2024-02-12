@@ -15,13 +15,13 @@ const Deposit = () => {
               <div className="card deposit-card mt-4">
                 <div className="mb-0 d-flex">
                   
-                  <p className="b-o ms-3 ">STEP 1:</p>
-                  <p className="balance-h mb-0 ms-3">Transfer the amount below given scaner</p>
+                  <p className="step-1 ms-3 ">STEP 1:</p>
+                  <p className="inst mb-0 ms-3">Transfer the amount below given scaner</p>
                 </div>
                 <div className="mb-0 d-flex">
                   
-                  <p className="b-o ms-3 ">STEP2:</p>
-                  <p className="balance-h mb-0 ms-3">Enter wallet address amount and trasaction id below and upload the transaction slip </p>
+                  <p className="step-1 ms-3 ">STEP2:</p>
+                  <p className=" inst mb-0 ms-3">Enter wallet address amount and trasaction id below and upload the transaction slip </p>
                 </div>
 
                 <div className="px-4">
@@ -104,7 +104,7 @@ const Deposit = () => {
                     
                     
 
-                    <button type="submit" className="btn transfer-btn mt-4">
+                    <button type="submit" className="btn deposit-f-btn mt-lg-4 mt-md-3 mt-sm-3 ">
                       Submit
                     </button>
                   </form>

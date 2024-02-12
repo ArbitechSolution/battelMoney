@@ -5,16 +5,16 @@ const CasinoResults = () => {
   return (
     <div className="col-lg-10 com-h">
       <div className="row">
-        <div className="col-12 px-2 mt-2">
+        <div className="col-12 p-3">
           <div className="bet-h ">
-            <h4 className="p-2 ms-2">Casino Resuts</h4>
+            <h4 className="p-2 ms-2"> Casino Results</h4>
 
             <div class="dates-div p-2 d-flex ">
               <div className="row">
-                <div className="col-md-4 mt-1">
+                <div className="col-md-5 mt-1">
                   <div className="d-flex">
                     <div className="from d-flex align-items-center justify-content-center">
-                      From:
+                      Date:
                     </div>
                     <div class="">
                       <input
@@ -23,13 +23,13 @@ const CasinoResults = () => {
                         type="date"
                         autocomplete="off"
                         placeholder="Select date from"
-                        className="date-input "
+                        className="date-input p-1 "
                         value="2024-02-10"
                       />
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 mt-1">
+                <div className="col-md-3  mt-1">
                   <div className="d-flex ">
                     <div className="from d-flex align-items-center justify-content-center">
                       Game
@@ -42,20 +42,12 @@ const CasinoResults = () => {
                     </select>
                   </div>
                 </div>
-                <div className="col-md-4 mt-1">
-                  <button className="btn btn-success ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-search"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg>{" "}
-                    Search
-                  </button>
+                <div className="col-md-3 mt-1">
+                <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
                 </div>
               </div>
             </div>
@@ -64,6 +56,10 @@ const CasinoResults = () => {
                 <tr>
                   <th scope="col">ROUND ID</th>
                   <th scope="col">RESULT</th>
+                  <th scope="col">DEBIT</th>
+                  <th scope="col">CREDIT</th>
+                  <th scope="col">CLOSING BAL.</th>
+                  <th scope="col">NARRATION</th>
                 </tr>
               </thead>
               <tbody>

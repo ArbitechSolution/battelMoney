@@ -1,7 +1,8 @@
 .funds-transfer-main-div{
     background-color: rgb(20, 19, 19);
-    height: 86vh;
+    min-height: 86vh;
     width: 100%;
+    max-height: auto;
     border-radius: 5px;
 
 }
@@ -16,7 +17,7 @@
     border-top: 1px solid rgb(66, 61, 61);
 }
 .deposit-card{
-    height: 420px;
+    height: 370px;
     width: 500px;
     background-color: black;
     border: 1px solid rgb(99, 96, 96);
@@ -25,11 +26,11 @@
 .balance-div{
     
 }
-.balance-h{
+.inst{
     color: white;
     font-size: 14px;
 }
-.b-o{
+.step-1{
     color:#fa5004;
     font-size: 17px;
     font-weight: 600;
@@ -39,22 +40,62 @@ label{
     font-size: 11px;
 
 }
-.user-id-input{
+/* .user-id-input{
     background-color:rgb(102, 146, 146);
-}
+} */
 
-.transfer-btn{
+.deposit-f-btn{
     width: 100%;
     background-color: #fa5004;
     color: white;
 }
-@media screen and (max-width: 490px){
+.deposit-f-btn:hover{
+    background-color: #fa5004 !important;
+}
+@media screen and (max-width: 600px){
     .deposit-card{
-        height: 420px;
+        height: 500px;
         width: 340px;
         background-color: black;
         border: 1px solid rgb(99, 96, 96);
         color: white;
+    }
+    .inst{
+        color: white;
+        font-size: 9px;
+    }
+    .step-1{
+        color:#fa5004;
+        font-size: 9px;
+        font-weight: 600;
+        font-family: "mukta";
+    }
+    .deposit-btn{
+        width: 100%;
+        background-color: #fa5004;
+        color: white;
+    }
+
+
+}
+
+@media screen and (max-width: 490px){
+    .deposit-card{
+        height: 500px;
+        width: 340px;
+        background-color: black;
+        border: 1px solid rgb(99, 96, 96);
+        color: white;
+    }
+    .inst{
+        color: white;
+        font-size: 12px;
+    }
+    .step-1{
+        color:#fa5004;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: "mukta";
     }
 
 

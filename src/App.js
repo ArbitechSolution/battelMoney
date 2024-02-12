@@ -24,6 +24,7 @@ import CasinoResults from "./Components/CasinoResults/CasinoResults";
 import LiveCasino from "./Components/LiveCasino/LiveCasino";
 import Deposit from "./Components/Deposit/Deposit";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
+import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -35,6 +36,7 @@ const App = ()=> {
     <div className="bg-black row app-row ">
       <BrowserRouter>
       {/* <Login /> */}
+      {/* <WalletSignIn/> */}
       <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
      <Sidebar showSidebar={showSidebar} />

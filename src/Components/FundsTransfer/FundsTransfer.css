@@ -16,7 +16,7 @@
     border-top: 1px solid rgb(66, 61, 61);
 }
 .f-card{
-    height: 420px;
+    height: 410px;
     width: 370px;
     background-color: black;
     border: 1px solid rgb(99, 96, 96);
@@ -50,7 +50,7 @@ label{
 }
 @media screen and (max-width: 490px){
     .f-card{
-        height: 420px;
+        height: 390px;
         width: 340px;
         background-color: black;
         border: 1px solid rgb(99, 96, 96);

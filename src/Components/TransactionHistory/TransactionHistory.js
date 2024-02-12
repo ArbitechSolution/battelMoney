@@ -10,7 +10,7 @@ const TransactionHistory = () => {
           <h4 className="p-2 ms-2">My Transactions</h4>
           <div class="dates-div p-2 d-flex ">
             <div className='row'>
-                <div className='col-md-4 mt-1'>
+                <div className='col-md-5 mt-1'>
                 <div className="d-flex">
               <div className="from d-flex align-items-center justify-content-center">From:</div>
             <div class="">
@@ -20,7 +20,7 @@ const TransactionHistory = () => {
                 type="date"
                 autocomplete="off"
                 placeholder="Select date from"
-                className="date-input "
+                className="date-input p-2 "
                 value="2024-02-10"
               />
             </div>
@@ -28,7 +28,7 @@ const TransactionHistory = () => {
               </div>
 
                 </div>
-                <div className='col-md-4 mt-1'>
+                <div className='col-md-5 mt-1'>
                 <div className="d-flex ">
               <div className="from d-flex align-items-center justify-content-center">To:</div>
             <div class="">
@@ -38,7 +38,7 @@ const TransactionHistory = () => {
                 type="date"
                 autocomplete="off"
                 placeholder="Select date from"
-                className="date-input "
+                className="date-input  p-2"
                 value="2024-02-10"
               />
 
@@ -48,7 +48,7 @@ const TransactionHistory = () => {
               </div>
 
                 </div>
-                <div className='col-md-4 mt-1'>
+                <div className='col-md-2 mt-1'>
                 <button className="btn btn-success "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 </svg> Search</button>
@@ -67,8 +67,8 @@ const TransactionHistory = () => {
           
         </div>
         <div className='d-flex  mt-2'>
-            <div className='deposit-btn'> Total Deposit : <span>0</span></div>
-            <div className='withdrawal-btn ms-2'>Total Withdrawal : <span>0</span></div>
+            <div className='deposit-btn'> Total Deposit : <span className='ms-1'>0</span></div>
+            <div className='withdrawal-btn ms-2'>Total Withdrawal : <span className='ms-1'>0</span></div>
 
           </div>
       </div>

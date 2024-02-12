@@ -7,12 +7,13 @@ import bowling from "../../Media/bowling.png";
 
 const ScoreCard = () => {
   return (
-    <div className=" ">
+    <div className="">
       <div className="match-score-section mt-2 d-flex flex-column align-items-center justify-content-center">
         <div className="mt-2 match-name-div d-flex justify-content-center">
           <button className="match-name-btn">Test Match</button>
-          <hr className="org-line" />
+          <hr className="orange-line" />
         </div>
+        
         <div>
           <p className="mn">
             NEW ZEELAND <span className="vs">vs</span> SOUTH AFRICA

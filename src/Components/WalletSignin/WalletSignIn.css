@@ -1,0 +1,56 @@
+
+.background-img {
+    background: url(../../Media/login_bg4.jpg);
+    background-size:auto;
+    width: 100vw;
+    height: 100vh;
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* position: relative; */
+    overflow: hidden;
+  }
+  .img-div{
+      height: 80px;
+      width: 80px;
+  
+  }
+  
+  
+  .wallet-card{
+      height: 300px;
+      width: 400px;
+      background-color: rgb(17, 16, 16);
+      /* margin-top: 400px; */
+  
+  }
+  .wallet-card form{
+      color: white;
+  }
+  .login-input{
+      outline: none !important;
+      border: none !important;
+      background-color:rgb(29, 25, 25) ;
+      height: 35px;
+      width: 100%;
+      border-radius: 5px;
+      color: white !important;
+  
+  }
+  .login-btn{
+      width: 100%;
+      background-color: #009B2f;
+      color: white;
+      font-family: "mukta";
+  }
+  .login-btn:hover{
+      background-color:#fa5004 ;
+  }
+  .bth{
+      color: white;
+      font-size: 9px;
+  }
+  .bth span{
+      color:#fa5004;
+      
+  }
+  

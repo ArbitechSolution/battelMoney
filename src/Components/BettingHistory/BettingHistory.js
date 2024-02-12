@@ -11,7 +11,7 @@ const BettingHistory = () => {
 
             <div class="dates-div p-2 d-flex ">
               <div className="row">
-                <div className="col-md-4 mt-1">
+                <div className="col-md-5 mt-1">
                   <div className="d-flex">
                     <div className="from d-flex align-items-center justify-content-center">
                       From:
@@ -29,7 +29,7 @@ const BettingHistory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 mt-1">
+                <div className="col-md-5 mt-1">
                   <div className="d-flex ">
                     <div className="from d-flex align-items-center justify-content-center">
                       To:
@@ -47,7 +47,7 @@ const BettingHistory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 mt-1">
+                <div className="col-md-2 mt-1">
                   <button className="btn btn-success ms-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
