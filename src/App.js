@@ -34,10 +34,10 @@ const App = ()=> {
   return (
     <div className="bg-black row app-row ">
       <BrowserRouter>
-      <Login />
-      {/* <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
+      {/* <Login /> */}
+      <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
-     <Sidebar showSidebar={showSidebar} /> */}
+     <Sidebar showSidebar={showSidebar} />
 
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -54,7 +54,7 @@ const App = ()=> {
         <Route path="/Deposit" element={<Deposit/>}/>
         <Route path="/ChangePassword" element={<ChangePassword/>}/>
         <Route path="/LiveCasino" element={<LiveCasino/>}/>
-        <Route path="/Login" element={<Login/>}/>
+        {/* <Route path="/Login" element={<Login/>}/> */}
 
       </Routes>
       </BrowserRouter>
