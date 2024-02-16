@@ -48,6 +48,9 @@ label{
     background-color: #fa5004;
     color: white;
 }
+.transfer-btn:hover{
+    background-color:#d85214 ;
+}
 @media screen and (max-width: 490px){
     .f-card{
         height: 390px;

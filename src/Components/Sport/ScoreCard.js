@@ -1,4 +1,4 @@
-import { Collapse } from "bootstrap";
+// import { Collapse } from "bootstrap";
 import React from "react";
 import { MdOutlineStackedLineChart } from "react-icons/md";
 import { MdOutlineOndemandVideo } from "react-icons/md";
@@ -9,12 +9,16 @@ const ScoreCard = () => {
   return (
     <div className="">
       <div className="match-score-section mt-2 d-flex flex-column align-items-center justify-content-center">
-        <div className="mt-2 match-name-div d-flex justify-content-center">
+        <div className="mt-2 match-name-div d-flex justify-content-center ">
           <button className="match-name-btn">Test Match</button>
-          <hr className="orange-line" />
+          
+          <div>
+          {/* <hr className="orange-line" /> */}
+            </div>
+          {/* <div className="orange-line">jkjbu</div> */}
         </div>
         
-        <div>
+        <div className="mt-1">
           <p className="mn">
             NEW ZEELAND <span className="vs">vs</span> SOUTH AFRICA
           </p>

@@ -5,14 +5,14 @@ const Deposit = () => {
   return (
     <div className="col-lg-10">
       <div className="row">
-        <div className="col-12 p-2">
+        <div className="col-12 px-2 p-1">
           <div className="funds-transfer-main-div ">
             <div className="F-h p-2 pb-0">
               <p className="ms-3">Deposit USDT</p>
             </div>
 
             <div className="form-area d-flex justify-content-center align-items-center">
-              <div className="card deposit-card mt-4">
+              <div className="card deposit-card mg-lg-4 mt-2">
                 <div className="mb-0 d-flex">
                   
                   <p className="step-1 ms-3 ">STEP 1:</p>
@@ -38,7 +38,7 @@ const Deposit = () => {
                         className="form-control mt-2"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        placeholder="Enter  Amount"
+                        placeholder="Enter Wallet Address"
                       />
                    
                     </div>
@@ -75,7 +75,7 @@ const Deposit = () => {
                         className="form-control mt-2"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        placeholder="Enter  Amount"
+                        placeholder="Enter Transaction ID"
                       />
                    
                     </div>
@@ -104,8 +104,8 @@ const Deposit = () => {
                     
                     
 
-                    <button type="submit" className="btn deposit-f-btn mt-lg-4 mt-md-3 mt-sm-3 ">
-                      Submit
+                    <button type="submit" className="btn deposit-f-btn mt-lg-4 mt-2  ">
+                      Add Balance
                     </button>
                   </form>
                 </div>

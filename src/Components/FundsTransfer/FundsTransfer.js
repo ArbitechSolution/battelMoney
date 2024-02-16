@@ -55,7 +55,7 @@ const FundsTransfer = () => {
                     </div>
 
                     <button type="submit" className="btn transfer-btn mt-4">
-                      Submit
+                      Transfer
                     </button>
                   </form>
                 </div>

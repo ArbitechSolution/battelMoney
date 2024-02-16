@@ -1,10 +1,11 @@
 import React from "react";
-import a from "../../Media/TP2020.webp";
-import e from "../../Media/Lucky7A.webp";
-import b from "../../Media/32Cards.webp";
+import a from "../../Media/img1.png";
+import e from "../../Media/img5.png";
+import b from "../../Media/img2.png";
 import c from "../../Media/32CardsB.webp";
-import d from "../../Media/DT2020.webp";
+import d from "../../Media/img4.png";
 import f from "../../Media/color-game2.png";
+import g from "../../Media/img7.png";
 import "./LiveCasino.css";
 
 const LiveCasino = () => {
@@ -15,6 +16,14 @@ const LiveCasino = () => {
           <div className="bet-h ">
             <h4 className="p-2 ms-2">Matched Bet</h4>
             <div className="d-flex flex-wrap flex-row justify-content-between align-items-center px-2 py-2">
+              <div className="">
+                <div class="card casinocard-div ms-2 mt-3">
+                  <img class="small-card-img" src={g} alt="a" />
+                  <div class="overlaySmallCard d-flex justify-content-center">
+                    <p class="">Aviator</p>
+                  </div>
+                </div>
+              </div>
               <div className="">
                 <div class="card casinocard-div ms-2 mt-3">
                   <img class="small-card-img" src={a} alt="a" />
@@ -64,11 +73,7 @@ const LiveCasino = () => {
               </div>
             </div>
             </div>
-            <div className="d-flex flex-row">
             
-           
-
-            </div>
            
            
            

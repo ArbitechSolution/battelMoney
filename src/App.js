@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
-// import SliderH from "./Components/MatchesDetail/SliderH";
+
 import "./App.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import RightSidebar from "./Components/RightSidebar/RIghtSidebar"
-// import MainArea from "./Components/MatchesDetail/MatchesDetail";
+
 import Home from "./Components/Home/Home";
 import Sport from "./Components/Sport/Sport";
+import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 import MyMarkeet from "./Components/MyMarkeet/MyMarkeet";
 import BettingHistory from "./Components/BettingHistory/BettingHistory";
 import FundsTransfer from "./Components/FundsTransfer/FundsTransfer";
@@ -23,8 +22,11 @@ import ProfitLoss from "./Components/ProfitLoss/ProfitLoss";
 import CasinoResults from "./Components/CasinoResults/CasinoResults";
 import LiveCasino from "./Components/LiveCasino/LiveCasino";
 import Deposit from "./Components/Deposit/Deposit";
+import InPlay from "./Components/InPlay/InPlay";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
-import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
+import ColorGame from "./Components/ColorGame/ColorGame";
+// import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
+// import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -33,16 +35,17 @@ const App = ()=> {
   };
 
   return (
-    <div className="bg-black row app-row ">
+    <div className="bg-black position-relative row app-row ">
       <BrowserRouter>
-      {/* <Login /> */}
-      {/* <WalletSignIn/> */}
+     
       <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
      <Sidebar showSidebar={showSidebar} />
 
       <Routes>
+
         <Route path="/" element={<Home/>}/>
+        <Route path="/InPlay" element={<InPlay/>}/>
         <Route path="/Sport" element={<Sport/>}/>
         <Route path="/MyMarkeet" element={<MyMarkeet/>}/>
         <Route path="/BettingHistory" element={<BettingHistory/>}/>
@@ -56,7 +59,9 @@ const App = ()=> {
         <Route path="/Deposit" element={<Deposit/>}/>
         <Route path="/ChangePassword" element={<ChangePassword/>}/>
         <Route path="/LiveCasino" element={<LiveCasino/>}/>
-        {/* <Route path="/Login" element={<Login/>}/> */}
+        <Route path="/Login" element={<Login/>}/>
+        <Route path="/WalletSignIn" element={<WalletSignIn/>}/>
+        <Route path="/ColorGame" element={<ColorGame/>}/>
 
       </Routes>
       </BrowserRouter>

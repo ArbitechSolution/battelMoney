@@ -1,4 +1,4 @@
-.deposit-btn{
+.deposit-detail-btn{
     border: 1px solid rgb(97, 207, 54);
     width: 150px;
     border-radius: 20px;
@@ -8,12 +8,12 @@
     align-items: center;
 
 }
-.deposit-btn span{
+.deposit-detail-btn span{
     color: red;
     font-family: "mukta";
     font-size: 19px;
 }
-.withdrawal-btn{
+.withdrawal-detail-btn{
     border: 1px solid rgb(97, 207, 54);
     width: 170px;
     border-radius: 20px;
@@ -23,8 +23,11 @@
     align-items: center;
 
 }
-.withdrawal-btn span{
+.withdrawal-detail-btn span{
     color: red;
     font-family: "mukta";
     font-size: 19px;
+}
+.date-input{
+    width: 50px;
 }

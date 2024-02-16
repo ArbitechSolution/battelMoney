@@ -1,8 +1,8 @@
-import a from "../../Media/TP2020.webp";
-import e from "../../Media/Lucky7A.webp";
-import b from "../../Media/32Cards.webp";
+import a from "../../Media/img1.png";
+import e from "../../Media/img5.png";
+import b from "../../Media/img2.png";
 import c from "../../Media/32CardsB.webp";
-import d from "../../Media/DT2020.webp";
+import d from "../../Media/img4.png";
 const MiancardData = [
     {   id:1,
         title:"20-20 TEEN PATTI",

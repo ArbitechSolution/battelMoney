@@ -6,8 +6,9 @@
     height: 100vh;
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
-    /* position: relative; */
+    position: absolute;
     overflow: hidden;
+    z-index:99;
   }
   .img-div{
       height: 80px;
@@ -21,6 +22,9 @@
       width: 400px;
       background-color: rgb(17, 16, 16);
       /* margin-top: 400px; */
+      position: absolute;
+      z-index:9999;
+      top:15%;
   
   }
   .wallet-card form{

@@ -8,7 +8,12 @@
   .side-bar{
     background-color: #202020;
     height : 88vh;
+    overflow-y: scroll;
+    
   }
+  .side-bar::-webkit-scrollbar{
+    display:none;
+}
   .list-group{
     background-color: #202020;
   
@@ -18,13 +23,14 @@
     border: none !important;
     border-bottom: 1px solid grey !important;
     color: white !important;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "mukta";
     font-weight: 600;
+    height: 45px;
   
   }
   .list-group-item:hover{
-    translate: 3px 0px 0px;
+    /* translate: 3px 0px 0px; */
     transition: .5s ease;
     border-left: 2px solid #fa5004 !important;
   }
@@ -36,14 +42,52 @@
     opacity: 1;
   }
   .menu{
-    background-color: #302f2f;
+    background-color: #3b3838;
     color: white;
     font-family: "mukta";
     font-weight: 500;
     border-top: 1px solid grey;
-    height : 30px;
+    min-height :39px;
+    max-height: auto;
+    font-size: 14px;
+    transition: .5s ease;
     
   }
+  .subMenu{
+    height: 32px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "mukta";
+    border-top: 1px solid grey;
+    background-color: #333030;
+
+  }
+  .menu-icon{
+    color:white;
+    font-size: 19px;
+    /* transition: all .2s ease-out; */
+  }
+  /* <---------------------------------->sdebardropdown>>>>>>>>>>>>>>>>>>>> */
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+ 
+
+/* <-------------------------------------------------------------------------------------------------->>>>>> */
+
+
+  
+  
   @media screen and (max-width: 550px){
     .side-bar{
         width: 200px;

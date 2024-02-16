@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import logo from "../../Media/logo4.png";
 import "./Navbar.css";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { NavLink } from "react-router-dom";
+import { NavLink,useLocation } from "react-router-dom";
 import { MdLeaderboard } from "react-icons/md";
 import { IoMdSwap } from "react-icons/io";
 import { FaCreditCard } from "react-icons/fa";
@@ -15,13 +15,28 @@ import { MdOutlineMemory } from "react-icons/md";
 import { FaKey } from "react-icons/fa";
 import StakeSettingModal from "./StakeSettingModal";
 function Navbar({ toggleSidebar, showSidebar }) {
+  const location = useLocation();
   const [modal, setModal] = useState(false);
+  const [active,setActive]= useState(window.location.pathname);
   const displayModal = () => {
     setModal(true);
   };
   const closeModal = () => {
     setModal(false);
   };
+  useEffect(() => {
+    // Update active link on route change
+  
+    const path = location.pathname;
+
+    if (path === "/") {
+      setActive("/");
+    } else if (path === "/InPlay") {
+      setActive("/InPlay");
+    } else if (path === "/LiveCasino") {
+      setActive("/LiveCasino");
+    }
+  }, [location.pathname]);
   return (
     <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">
@@ -33,14 +48,20 @@ function Navbar({ toggleSidebar, showSidebar }) {
           </div>
           <div className="col-lg-6  order-lg-2    d-lg-block  d-none ">
             <div className="d-flex justify-content-center pt-2 ">
-              <button className="nav-btns">SPORTS</button>
-              <button className="nav-btns">INPLAY</button>
-              <button className="nav-btns">LIVE TABLE</button>
+             <NavLink  onClick={()=>{setActive("/")}} to="/" className={` nav-btn ${
+              active === "/"  && "is-active"
+             }`}>SPORTS</NavLink> 
+              <NavLink onClick={()=>{setActive("/InPlay")}} className={` nav-btn ${
+              active === "/InPlay"  && "is-active"
+             }`} to="/InPlay">INPLAY</NavLink>
+              <NavLink onClick={()=>{setActive("/LiveCasino")}} to="/LiveCasino" className={` nav-btn ${
+              active === "/LiveCasino"  && "is-active"
+             }`}>LIVE TABLE </NavLink>
             </div>
           </div>
           <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end  ">
             <NavLink to="/Login"><button className="signin-btn mt-2  me-3">SignIn</button></NavLink>
-            <NavLink to="/Login"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
+            <NavLink to="/WalletSignIn"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
             <div class="dropdown mt-0">
               <button class="dropbtn mt-2 pt-0 d-flex">
                 <div className="person-icon-div">

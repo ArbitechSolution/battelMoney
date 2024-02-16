@@ -4,9 +4,11 @@
   background-size:auto;
   width: 100vw;
   height: 100vh;
+  position: absolute;
   /* background-size: 100% 100%; */
   /* background-repeat: no-repeat; */
   /* position: relative; */
+  z-index:99;
   overflow: hidden;
 }
 .img-div{
@@ -20,6 +22,9 @@
     height: 370px;
     width: 400px;
     background-color: rgb(17, 16, 16);
+    position: absolute;
+    z-index:99999;
+    top: 15%;
 
 }
 .login-card form{

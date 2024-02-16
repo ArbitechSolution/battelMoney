@@ -1,5 +1,5 @@
 import React from 'react'
-import MainArea from '../MatchesDetail/MatchesDetail';
+import MatchesDetail from '../MatchesDetail/MatchesDetail';
 import RightSidebar from "../RightSidebar/RIghtSidebar";
 import "./Home.css"
 
@@ -7,8 +7,8 @@ import "./Home.css"
 const Home = () => {
   return (
     <div className='col-lg-10 home'>
-        <div className='row home position-relative'>
-        <MainArea/>
+        <div className='row home p'>
+        <MatchesDetail/>
         <RightSidebar/>
 
         </div>

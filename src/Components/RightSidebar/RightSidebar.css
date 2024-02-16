@@ -1,6 +1,6 @@
 .L-sidebar{
     background-color: #202020;
-    /* height: 89vh; */
+    height: 89vh;
     /* width: 20%; */
     overflow-y: scroll;
 }
@@ -69,12 +69,13 @@
     
   }
   .smallcard-div{
-    width: 150px;
+    width: 190px;
     background-color: #202020;
     border-radius: 5px;
     border:none;
     
   }
+ 
   .small-card-img{
     border-radius: 5px;
   }
@@ -91,13 +92,14 @@
   
 }
 .overlaySmallCard p{
-    color: white !important;
+    color:#fd740d;
     font: "mukta";
     font-size: 12px;
     font-weight: 600;
     /* margin-left: 36px; */
     margin-top: 30px;
 }
+
 
 .smallcard-div:hover{
     
@@ -109,5 +111,42 @@
     width:100%;
     border-radius: 5px;
 
+
+}
+.aviator-card{
+    border-radius: 8px;
+    width: 400px;
+    border: none;
+    
+    
+
+  }
+  .aviator-card-img{
+    border-radius: 8px;
+  }
+  .overlayAviatorCard{
+    position:absolute;
+    bottom:0;
+    overflow: hidden;
+    left:0;
+    right:0;
+    height:0;
+    background-color: rgba(70, 67, 67, 0.75);
+    border-radius: 5px;
+  }
+  .overlayAviatorcard-p{
+    color:#fd740d;
+    font: "mukta";
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 80px;
+  }
+  .aviator-card:hover{
+    transition: .5s ease;
+}
+.aviator-card:hover .overlayAviatorCard{
+    height:100%;
+    width:100%;
+    border-radius: 7px;
 
 }

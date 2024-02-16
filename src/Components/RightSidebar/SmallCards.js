@@ -1,10 +1,11 @@
 import React from "react";
-import a from "../../Media/TP2020.webp";
-import e from "../../Media/Lucky7A.webp";
-import b from "../../Media/32Cards.webp";
+import a from "../../Media/img1.png";
+import e from "../../Media/img5.png";
+import b from "../../Media/img2.png";
 import c from "../../Media/32CardsB.webp";
-import d from "../../Media/DT2020.webp";
-import f from "../../Media/color-game2.png";
+import d from "../../Media/img4.png";
+import f from "../../Media/img6.png";
+import g from "../../Media/img7.png";
 const SmallCards = () => {
   return (
     <>
@@ -61,6 +62,18 @@ const SmallCards = () => {
 
           </div>
         </div>
+      </div>
+      <div className="col-12 p-2">
+        <div className="card aviator-card mt-2 ">
+          <img className=" aviator-card-img" src={g} alt="a"/>
+          <div className="overlayAviatorCard d-flex justify-content-center">
+            <p className="overlayAviatorcard-p">Aviator</p>
+
+          </div>
+
+
+        </div>
+
       </div>
     </>
   );

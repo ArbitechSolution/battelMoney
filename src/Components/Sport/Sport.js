@@ -6,9 +6,9 @@ import LiveTvSection from './LiveTvSection';
 
 const Sport = () => {
   return (
-    <div className='col-lg-10 px-2 pt-1  ' >
-        <div className='row '>
-            <div className='col-lg-8  score-card'>
+    <div className='col-lg-10  pt-1  ' >
+        <div className='row px-1'>
+            <div className='col-lg-8  px-2 score-card'>
                 <ScoreCard  />
                 <BettingCard/>
 

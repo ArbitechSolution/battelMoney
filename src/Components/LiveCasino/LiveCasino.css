@@ -15,7 +15,7 @@
     left:0;
     right:0;
     height:0;
-    background-color: rgba(70, 67, 67, 0.75);
+    background-color: rgba(58, 54, 54, 0.75);
     border-radius: 5px;
 
   
@@ -23,7 +23,7 @@
 .overlaySmallCard p{
     color: #fa5004;
     font: "mukta";
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     /* margin-left: 36px; */
     margin-top: 36px;
@@ -44,6 +44,17 @@
 @media screen and (max-width: 550px){
     .casinocard-div{
         width: 180px;
+        background-color: #202020;
+        border-radius: 5px;
+        border:none;
+       
+    }
+
+
+}
+@media screen and (max-width: 450px){
+    .casinocard-div{
+        width: 140px;
         background-color: #202020;
         border-radius: 5px;
         border:none;

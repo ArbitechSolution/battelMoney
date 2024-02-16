@@ -4,7 +4,7 @@ import { MdChecklist } from "react-icons/md";
 
 const LiveTvSection = () => {
   return (
-    <div className="px-2 d-lg-block d-none">
+    <div className="px-1 d-lg-block d-none">
       <div className="TV-outer-div px-3 py-2">
         <div className="live-tv-card">
           <div className="d-flex justify-content-between tv-card pb-0 mb-0 p-1">
