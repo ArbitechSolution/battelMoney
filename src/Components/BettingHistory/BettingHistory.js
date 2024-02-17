@@ -9,9 +9,8 @@ const BettingHistory = () => {
           <div className="bet-h ">
             <h4 className="p-2 ms-2">Matched Bet</h4>
 
-            <div class="dates-div p-2 d-flex ">
-              <div className="row">
-                <div className="col-md-5 mt-1">
+            <div class="dates-div p-1 d-flex row">
+            <div className="col-md-3 mt-1">
                   <div className="d-flex">
                     <div className="from d-flex align-items-center justify-content-center">
                       From:
@@ -29,7 +28,7 @@ const BettingHistory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5 mt-1">
+                <div className="col-md-3 mt-1">
                   <div className="d-flex ">
                     <div className="from d-flex align-items-center justify-content-center">
                       To:
@@ -62,7 +61,7 @@ const BettingHistory = () => {
                     Search
                   </button>
                 </div>
-              </div>
+              
             </div>
 
             <table class="table table-dark table-striped bd">

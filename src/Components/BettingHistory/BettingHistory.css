@@ -2,7 +2,7 @@
     min-height: 88vh;
 }
 .dates-div{
-    width: 100%;
+    /* width: 100%; */
     background-color:  rgb(48, 45, 45);
     font-size: 14px;
     font-family: "mukta";
@@ -19,7 +19,7 @@
 .dates-div input{
     background-color:rgb(37, 35, 35);
     height:35px;
-    width:160px;
+    width:200px;
     /* border-radius: 3px; */
     border: none;
     color: white !important;

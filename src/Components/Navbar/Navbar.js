@@ -65,7 +65,7 @@ function Navbar({ toggleSidebar, showSidebar }) {
             <div class="dropdown mt-0">
               <button class="dropbtn mt-2 pt-0 d-flex">
                 <div className="person-icon-div">
-                  <BsFillPersonFill className="p-icon" />
+                  <BsFillPersonFill className="person-icon" />
                 </div>
                 <IoMdArrowDropdown className="mt-2" />
               </button>
