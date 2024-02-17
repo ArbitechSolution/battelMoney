@@ -12,16 +12,24 @@
 .MainArea{
     background-color: #202020;
     min-height: 300px !important;
-    /* max-height: auto !important; */
-    /* height: 1000px; */
+    
     width: 100%;
     margin-top: 10px;
-    /* overflow:auto; */
-    /* border: 1px solid white !important; */
+   
 }
 .sport-div{
     background-color: #353434;
     height: 80px;
+    width: 100%;
+    /* overflow: hidden; */
+    /* overflow-x: scroll; */
+   
+    /* overflow-x: scroll; */
+  
+
+}
+.sport-div::-webkit-scrollbar{
+    display:none;
 }
 .single-sport-div{
     height: 80px;

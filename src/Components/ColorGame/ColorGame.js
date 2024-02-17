@@ -5,6 +5,7 @@ import { FaRegPlusSquare } from "react-icons/fa";
 import { FaRegMinusSquare } from "react-icons/fa";
 
 const ColorGame = () => {
+  const [count,setCount] = useState(0);
   const [toggle, setToggle] = useState(false);
   const [modal, setModal] = useState();
   const [twoActive, setTwoActive] = useState(false);
@@ -106,6 +107,49 @@ const ColorGame = () => {
                 100
               </button>
             </div>
+            <div className=" p-2 mt-2">
+              Number
+              <div className="main-counter-div mt-3 d-flex">
+                <button onClick={()=>{setCount(count-1)}} className="minus-div d-flex justify-content-center align-items-center">
+                  -
+
+                </button>
+                <div className="counter-data-div d-flex justify-content-center align-items-center ">
+                  {
+                    count
+                  }
+
+                </div>
+                <button onClick={()=>{setCount(count+1)}}className="plus-div d-flex justify-content-center align-items-center">
+                  +
+
+                </button>
+
+
+              </div>
+
+            </div>
+            <div className="mt-2">
+              Total Contract Money is 2
+
+            </div>
+            <div className="d-flex justify-content-center mt-2 ">
+
+              <button  onClick={() => {
+            setModal(false);
+          }} className="red-button">
+                Close
+
+              </button>
+              <button className="Green-button">
+                 Place Bets
+              </button>
+
+            </div>
+            <div className="p-1 success">
+              Bet Slip Will Close in 18 Seconds
+
+            </div>
           </div>
         </div>
       </>
@@ -133,7 +177,7 @@ const ColorGame = () => {
                   <button
                     onClick={() => {
                       setModal(true);
-                      console.log("clicked");
+                      
                     }}
                     className="Green-button"
                   >
@@ -141,46 +185,82 @@ const ColorGame = () => {
                   </button>
                 </div>
                 <div className="col-4">
-                  <button className="violet-button">VIOLET</button>
+                  <button onClick={() => {
+                      setModal(true);
+                      
+                    }} className="violet-button">VIOLET</button>
                 </div>
                 <div className="col-4">
-                  <button className="red-button">RED</button>
+                  <button onClick={() => {
+                      setModal(true);
+                      
+                    }} className="red-button">RED</button>
                 </div>
               </div>
               <div className="row mt-4">
-                <div className="col-6 mx-auto d-flex justify-content-between">
-                  <div className="violet-red-btn d-flex justify-content-center align-items-center">
+                <div className="col-md-6 mx-auto d-flex justify-content-between">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="violet-red-btn d-flex justify-content-center align-items-center">
                     0
                   </div>
-                  <div className="small-green-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-green-btn d-flex justify-content-center align-items-center">
                     1
                   </div>
-                  <div className="small-red-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-red-btn d-flex justify-content-center align-items-center">
                     2
                   </div>
-                  <div className="small-green-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-green-btn d-flex justify-content-center align-items-center">
                     3
                   </div>
-                  <div className="small-red-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-red-btn d-flex justify-content-center align-items-center">
                     4
                   </div>
                 </div>
               </div>
               <div className="row mt-3">
-                <div className="col-6 mx-auto d-flex justify-content-between">
-                  <div className="violet-green-btn d-flex justify-content-center align-items-center">
+                <div className="col-md-6 mx-auto d-flex justify-content-between">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="violet-green-btn d-flex justify-content-center align-items-center">
                     5
                   </div>
-                  <div className="small-red-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-red-btn d-flex justify-content-center align-items-center">
                     6
                   </div>
-                  <div className="small-green-btn  d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-green-btn  d-flex justify-content-center align-items-center">
                     7
                   </div>
-                  <div className="small-red-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-red-btn d-flex justify-content-center align-items-center">
                     8
                   </div>
-                  <div className="small-green-btn d-flex justify-content-center align-items-center">
+                  <div onClick={() => {
+                      setModal(true);
+                      
+                    }} className="small-green-btn d-flex justify-content-center align-items-center">
                     9
                   </div>
                 </div>

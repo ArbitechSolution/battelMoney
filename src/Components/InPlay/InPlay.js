@@ -115,7 +115,7 @@ const InPlay = () => {
             </NavLink>
           </div>
           <div className="single-sport-div ms-1">
-            <NavLink className="nav-link">
+            <NavLink to="/Aviator" className="nav-link">
               <div className="image-div">
                 {isVisible && (
                   <img

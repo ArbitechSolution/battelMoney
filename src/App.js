@@ -25,6 +25,7 @@ import Deposit from "./Components/Deposit/Deposit";
 import InPlay from "./Components/InPlay/InPlay";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
 import ColorGame from "./Components/ColorGame/ColorGame";
+import Aviator from "./Components/Aviator/Aviator";
 // import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 // import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 const App = ()=> {
@@ -62,6 +63,7 @@ const App = ()=> {
         <Route path="/Login" element={<Login/>}/>
         <Route path="/WalletSignIn" element={<WalletSignIn/>}/>
         <Route path="/ColorGame" element={<ColorGame/>}/>
+        <Route path="/Aviator" element={<Aviator/>}/>
 
       </Routes>
       </BrowserRouter>

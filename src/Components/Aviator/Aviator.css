@@ -1,0 +1,113 @@
+.Aviator-main-div{
+    background-color: #181717;
+    height:75vh;
+    width: 100%;
+    border-radius: 7px;
+}
+.aviator-h-div{
+    color:#43CEED;
+    font-family: "mukta";
+}
+.aviator-h-div p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.small-g-btn{
+  background-color:  #0a5b6d;
+  height: 25px;
+  width: 50px;
+  border-radius: 13px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+.small-v-btn{
+
+    background-color:  rgb(141 77 181);
+    height: 25px;
+    width: 50px;
+    border-radius: 13px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canvas-main-div{
+    width: 100%;
+    border: 1px solid rgb(44, 43, 43);
+    height: 200px;
+    border-radius: 20px;
+}
+.bet-btn-main-div{
+    width: 100%;
+    border: 1px solid rgb(44, 43, 43);
+    height: 200px;
+    border-radius: 20px;
+    background: url(../../Media//grey-texture-bg.png); 
+    /* background-size: 100% 100%;   */
+    background-repeat:repeat;
+    background-size:auto;
+
+
+
+
+}
+.counter-div{
+    background-color: black;
+    width: 160px;
+    border-radius: 20px;
+    height:35px;
+    border: 1px solid rgb(63, 62, 62)
+}
+.p-icon{
+    height: 20px;
+    font-size: 20px;
+    background-color:rgb(63, 62, 62) ;
+    border-radius: 12px;
+    color: black;
+
+    
+
+}
+.m-icon{
+    height:20px;
+    font-size: 20px;
+    background-color:rgb(63, 62, 62) ;
+    border-radius: 12px;
+    color:black
+}
+.count-div{
+    font-size: 20px;
+    width: 70%;
+
+
+}
+.Amount-btn{
+    background-color:rgb(58, 57, 57) ;
+    height: 23px;
+    width: 70px;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+    font-family: "mukta";
+    border:none;
+}
+.Amount-btn:hover{
+    background-color: rgb(73, 71, 71);
+}
+.bet-button{
+    height: 95px;
+    width: 250px;
+    border-radius: 20px;
+    background-color:   #25c321 ;
+    border: none;
+  
+    color: white;
+    font-weight: 600;
+
+}
+

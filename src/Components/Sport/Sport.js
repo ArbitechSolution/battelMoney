@@ -1,8 +1,9 @@
 import React from 'react'
 import ScoreCard from './ScoreCard';
 import "./Sport.css";
-import BettingCard from './BettingCard';
+import OpenMarkeet from './OpenMarkeet';
 import LiveTvSection from './LiveTvSection';
+import MatchOdds from './MatchOdds';
 
 const Sport = () => {
   return (
@@ -10,7 +11,8 @@ const Sport = () => {
         <div className='row px-1'>
             <div className='col-lg-8  px-2 score-card'>
                 <ScoreCard  />
-                <BettingCard/>
+                <OpenMarkeet/>
+                {/* <MatchOdds/> */}
 
                 
 

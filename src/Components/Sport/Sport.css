@@ -173,6 +173,12 @@ hr {
    
 
 }
+.favourite{
+    color:rgb(230, 230, 12);
+    font-size: 13px; 
+    font-weight: 600;
+    font-family: "mukta";
+}
 .no-run-info{
     
     background-color: rgb(187, 180, 180);
@@ -216,8 +222,20 @@ hr {
     border-top: 1px solid rgb(146, 137, 137);
     background-color: #0f0e0e;
     height: 55px;
+    font-family: "mukta";
 
 } 
+.lead{
+    color: white;
+    font-size: 14px;
+    font-family: "mukta";
+}
+.green-live-dot{
+    height: 7px;
+    width:7px;
+    background-color: green;
+    border-radius: 5px;
+}
 .betting-t-n{
     color: white;
     font-size: 14px;

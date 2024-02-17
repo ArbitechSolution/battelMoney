@@ -145,6 +145,9 @@ const ScoreCard = () => {
               </div>
             </div>
           </div>
+          <div className="lead d-flex justify-content-center">
+            <p>India Lead by 46</p>
+          </div>
         </div>
       </div>
     </div>
