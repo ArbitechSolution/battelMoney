@@ -17,7 +17,7 @@ const LiveCasino = () => {
             <h4 className="p-2 ms-2">Matched Bet</h4>
             <div className="d-flex flex-wrap flex-row justify-content-between align-items-center px-2 py-2">
               <div className="">
-                <div class="card casinocard-div ms-2 mt-3">
+                <div class="card casinocard-div mx-auto ms-1 mt-3">
                   <img class="small-card-img" src={g} alt="a" />
                   <div class="overlaySmallCard d-flex justify-content-center">
                     <p class="">Aviator</p>
@@ -25,7 +25,7 @@ const LiveCasino = () => {
                 </div>
               </div>
               <div className="">
-                <div class="card casinocard-div ms-2 mt-3">
+                <div class="card casinocard-div mx-auto ms-1 mt-3">
                   <img class="small-card-img" src={a} alt="a" />
                   <div class="overlaySmallCard d-flex justify-content-center">
                     <p class="">TeenPatti 20-20</p>
@@ -33,7 +33,7 @@ const LiveCasino = () => {
                 </div>
               </div>
               <div className="">
-                <div class="card casinocard-div ms-2 mt-3">
+                <div class="card casinocard-div mx-auto ms-1 mt-3">
                   <img class="small-card-img" src={b} alt="a" />
                   <div class="overlaySmallCard d-flex justify-content-center">
                     <p class="">32 CardA</p>
@@ -41,7 +41,7 @@ const LiveCasino = () => {
                 </div>
               </div>
               <div className="">
-                <div className="card casinocard-div ms-2 mt-3">
+                <div className="card casinocard-div mx-auto  ms-1 mt-3">
                   <img className=" small-card-img" src={c} alt="a" />
                   <div className="overlaySmallCard d-flex justify-content-center">
                     <p className="">32 CardB</p>
@@ -49,7 +49,7 @@ const LiveCasino = () => {
                 </div>
               </div>
               <div className="">
-                <div className="card casinocard-div ms-2 mt-3">
+                <div className="card casinocard-div mx-auto ms-1 mt-3">
                   <img className=" small-card-img" src={d} alt="a" />
                   <div className="overlaySmallCard d-flex justify-content-center">
                     <p className="">Dragon Tiger 20-20</p>
@@ -57,7 +57,7 @@ const LiveCasino = () => {
                 </div>
               </div>
               <div className="">
-              <div className="card casinocard-div ms-2 mt-3 ">
+              <div className="card casinocard-div mx-auto ms-1 mt-3 ">
                 <img className=" small-card-img" src={e} alt="a" />
                 <div className="overlaySmallCard d-flex justify-content-center">
                   <p className="">Lucky 7A</p>
@@ -65,7 +65,7 @@ const LiveCasino = () => {
               </div>
             </div>
             <div className="">
-              <div className="card casinocard-div ms-2 mt-3 pb-2 ">
+              <div className="card casinocard-div mx-auto ms-1 mt-3 pb-2 ">
                 <img className=" small-card-img" src={f} alt="a" />
                 <div className="overlaySmallCard d-flex justify-content-center">
                   <p className="">Color Game</p>

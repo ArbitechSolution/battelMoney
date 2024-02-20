@@ -31,11 +31,7 @@ function Sidebar({ showSidebar }) {
       }
     });
   }
-  // const hamBurger = document.querySelector(".toggle-btn");
-
-  // hamBurger.addEventListener("click", function () {
-  //   document.querySelector("#sidebar").classList.toggle("expand");
-  // });
+ 
   return (
     <div
       className={`sidebar   side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${

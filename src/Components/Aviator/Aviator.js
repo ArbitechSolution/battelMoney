@@ -12,7 +12,7 @@ const Aviator = () => {
     <div className="col-lg-10 ">
       <div className="row home ">
         <div className="col-lg-8 p-2">
-          <div className="Aviator-main-div pt-2 p-2">
+          <div className="Aviator-main-div pt-1 p-2">
             <div className="aviator-h-div d-flex px-2 pt-1">
               <h3>Avaitor</h3>
               <p className="mt-2 px-1">(292745632)</p>
@@ -34,10 +34,12 @@ const Aviator = () => {
               <div className="small-g-btn mx-1">1.20x</div>
               <div className="small-g-btn mx-1">1.20x</div>
             </div>
-            <div className="canvas-main-div mt-3 mx-auto"></div>
-            <div className="bet-btn-main-div mt-3">
+            <div className="canvas-main-div mt-3 mx-auto">
+              
+            </div>
+            <div className="bet-btn-main-div mt-2">
               <div className="row mt-5">
-                <div className="col-md-7 mx-auto">
+                <div className="col-md-7 col-sm-12 mx-auto">
                   <div className="row">
                     <div className="col-5 d-flex justify-content-end flex-column">
                       <div className="counter-div d-flex justify-content-between p-1">
@@ -76,7 +78,7 @@ const Aviator = () => {
 
                       </div>
                     </div>
-                    <div className="col-7 d-flex justify-content-start">
+                    <div className="col-7 d-flex justify-content-start mx-auto">
                         <button className="bet-button">BET
 
                         </button>

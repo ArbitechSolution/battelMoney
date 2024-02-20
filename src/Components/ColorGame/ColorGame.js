@@ -334,14 +334,14 @@ const ColorGame = () => {
                 </div>
               </div>
               <div className="table-inner-row row">
-                <div className="col-3 d-flex align-items-center ps-2">
+                <div className="col-4 d-flex align-items-center ps-2">
                   2420345009120
                 </div>
                 <div className="col-2 d-flex align-items-center fail">Fail</div>
                 <div className="col-2 d-flex align-items-center fail">
                   -10.00
                 </div>
-                <div className="col-4 d-flex align-items-center justify-content-end">
+                <div className="col-4 d-flex align-items-center justify-content-end ">
                   <div
                     onClick={() => {
                       setToggle(!toggle);

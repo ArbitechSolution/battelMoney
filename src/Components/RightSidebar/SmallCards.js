@@ -6,10 +6,14 @@ import c from "../../Media/32CardsB.webp";
 import d from "../../Media/img4.png";
 import f from "../../Media/img6.png";
 import g from "../../Media/img7.png";
+import { NavLink } from "react-router-dom";
 const SmallCards = () => {
   return (
     <>
       <div className="col-6">
+        <NavLink to="/TeenPatti" className="nav-link">
+
+        
         <div className="card smallcard-div ms-2 mt-3">
           <img className=" small-card-img" src={a} alt="a" />
           <div className="overlaySmallCard d-flex justify-content-center">
@@ -17,8 +21,10 @@ const SmallCards = () => {
 
           </div>
         </div>
+        </NavLink>
       </div>
       <div className="col-6">
+        <NavLink  to="/32Cards" className="nav-link">
         <div className="card smallcard-div ms-2 mt-3">
           <img className=" small-card-img" src={b} alt="a" />
           <div className="overlaySmallCard d-flex justify-content-center">
@@ -26,8 +32,14 @@ const SmallCards = () => {
 
           </div>
         </div>
+
+        </NavLink>
+        
       </div>
       <div className="col-6">
+        <NavLink className="nav-link" to="/32CardsB">
+
+       
         <div className="card smallcard-div ms-2 mt-3">
           <img className=" small-card-img" src={c} alt="a" />
           <div className="overlaySmallCard d-flex justify-content-center">
@@ -35,6 +47,7 @@ const SmallCards = () => {
 
           </div>
         </div>
+        </NavLink>
       </div>
       <div className="col-6">
         <div className="card smallcard-div ms-2 mt-3">

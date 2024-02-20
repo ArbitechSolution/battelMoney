@@ -49,13 +49,13 @@
     border-top: 1px solid grey;
     min-height :39px;
     max-height: auto;
-    font-size: 14px;
+    font-size: 15px;
     transition: .5s ease;
     
   }
   .subMenu{
     height: 32px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     font-family: "mukta";
     border-top: 1px solid grey;

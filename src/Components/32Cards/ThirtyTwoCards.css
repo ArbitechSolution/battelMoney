@@ -1,0 +1,452 @@
+.teenpatti-game-div{
+    height: 89vh;
+    /* width: 50%; */
+    overflow-y: scroll;
+
+}
+
+.teenpatti-game-div::-webkit-scrollbar{
+    display:none;
+}
+.teenpatti-game-h{
+    background-color: #2C3D51;
+    width: 100%;
+    height: 39px;
+}
+.teenpatti-game-h p{
+    color: white;
+    font-family: "mukta";
+    font-size: 18px;
+    font-weight: 500;
+}
+.player-a-div{
+    color: white;;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "mukta";
+}
+.teenpatti-game-card{
+    height: 270px;
+    width: 100%;
+    /* border-radius: 6px; */
+    background-color: rgb(206, 206, 221);
+}
+.gamecard-div{
+    height: 38px;
+    width: 32px;
+    background-color: #2C3D51;
+    border: 1px solid #ff8A0C;
+}
+
+
+
+
+
+
+
+.table-h-div{
+    background-color: #E4E4E4;
+    width: 100%;
+    height: 37px;
+    color: #243A48;
+    font: 13px;
+    font-family: "mukta";
+    font-weight: bold;
+
+
+}
+.card-table-inner-row{
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    color: #243A48;
+    font-size: 16px;
+    font-family: "mukta";
+    font-weight: 500;
+    border-top: 1px solid #b0b5b8;
+}
+.back-btn{
+    height: 44px;
+    background-color: #2196F3;
+    width:90px;
+    border: none;
+}
+.lay-btn{
+    height: 44px;
+    background-color:#d67f23;
+    width:90px;
+    border: none;
+
+}
+.success-o{
+    color:#3eb33c;
+    font-size: 17px;
+};
+.rst-card{
+    height: 60px !important;
+    background-color: white !important;
+    width: 100%;
+}
+.rst-btn{
+    background-color: black;
+    color:#25c321;
+    font-family: "mukta";
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-dot{
+    width:20px;
+    height: 20px;
+    background-color: #E32E27;
+    border-radius: 10px;
+}
+.violet-dot{
+    width:20px;
+    height: 20px;
+    background-color:rgb(141 77 181) ;
+    border-radius: 10px;
+}
+.green-dot{
+    width:20px;
+    height: 20px;
+    background-color:#25c321 ;
+    border-radius: 10px;
+    
+
+}
+.plus-icon{
+    height: 20px;
+    width: 25px;
+}
+.fail{
+    color: rgb(235, 44, 44) !important;
+}
+.success{
+    color:#25c321;
+}
+.bet-menu-card{
+    width:100%;
+    height:370px;
+    color: #243A48;
+    font-size: 17px;
+    font-family: "mukta";
+    font-weight: 500;
+}
+.bet-menu-card-h{
+    color:#0ecf9f;
+    font-size: 18px;
+    font-family: "mukta";
+    
+    
+}
+.orange-circle{
+    /* height: 30px; */
+    /* width: 40px; */
+    border-radius: 10px;
+    color: white;
+    background-color: #d67f23;
+}
+/* <<<<<<<<<<<<<<------------------------------ModalData-------------->>>>>>> */
+.color-modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+}
+
+.color-modal-container {
+    position: absolute;
+    width: 520px;
+    height: 370px;
+    /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+    /* background-color: #01a839; */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 8px; */
+    z-index:999;
+
+
+}
+.model-h-dive{
+    background-color: #CFD5D9;
+    font-size: 17px;
+    font-weight: bold;
+    height: 43px;
+}
+.num-box{
+    height: 40px;
+    width: 80px;
+    border: none;
+    color: #9e9a9a;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+    /* background-color: rgb(165, 152, 152); */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.num-box.is-activated{
+    background-color: #9e9a9a !important;
+    color: black;
+}
+.minus-div{
+    width: 50px;
+    height: 45px;
+    border: none;
+    color: #9e9a9a;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+    font-size: 20px;
+}
+.plus-div{
+    width: 50px;
+    height: 45px;
+    border: none;
+    color: #9e9a9a;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+    font-size: 20px;
+
+}
+.counter-data-div{
+    width: 200px; 
+    height: 45px;
+    color: black;
+    font-size: 20px;
+    
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.data-modal-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+
+}
+.data-modal-container{
+    position: absolute;
+    width: 470px;
+    height: 335px;
+    /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+    background-color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 8px; */
+    z-index:999;
+    border: none;
+
+}
+.container-body{
+    color: white;
+    font-size: 17px;
+    font-family: "mukta";
+    font-weight: 600;
+}
+.modal-w-btn{
+    background-color: white;
+    height: 35px;
+    width: 150px;
+    border:none;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+
+}
+.modal-g-btn{
+    background-color:#25c321;
+    height: 30px;
+    width: 90px;
+    border:none;
+    border-radius: 5px;
+    color:  white;
+    font-size: 15px;
+
+
+}
+.orb{
+    background-color: #ff8a0e;
+    color: white;
+    height:27px;
+    width: 70px;
+    border: none;
+    border-radius: 4px;;
+    font-size: 15px;
+
+}
+.modal-footer{
+    border-top: 2px solid white;
+    width: 95%;
+    
+} 
+.mcb{
+    height: 40px;
+    width: 75px;
+    background-color:rgb(204, 41, 41);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    font-family: "mukta";
+}
+.mbb{
+    height: 40px;
+    width: 85px;
+    background-color:#25c321;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    font-family: "mukta";
+
+}
+.Results-modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+}
+.head-border{
+    background-color: #faad07;
+    color: rgb(17, 16, 16);
+    height:39px;
+    font-family: "mukta";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.results-modal-container {
+    position: absolute;
+    width: 470px;
+    height: 350px;
+    /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+    /* background-color: #01a839; */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 8px; */
+    z-index:999;
+    border: 1px solid white;
+
+
+}
+.results-modal-h{
+    font-size: 16px;
+    font-family: "mukta";
+}
+.cross-icon-result{
+    font-size: 22px;
+}
+.tropy-icon-div{
+    width: 80%;
+}
+.trophy-icon{
+    color: white;
+    /* margin-right: 50px;; */
+}
+@media screen and (max-width: 500px){
+   
+   
+    .results-modal-container {
+        position: absolute;
+        width: 400px;
+        height: 230px;
+        /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+        /* background-color: #01a839; */
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border-radius: 8px; */
+        z-index:999;
+        border: 1px solid white;
+    
+    
+    }
+    .data-modal-container{
+        position: absolute;
+        width: 400px;
+        height: 335px;
+        /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+        background-color: black;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border-radius: 8px; */
+        z-index:999;
+        border: none;
+    
+    }
+
+}
+
+
+

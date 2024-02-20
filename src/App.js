@@ -26,8 +26,10 @@ import InPlay from "./Components/InPlay/InPlay";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
 import ColorGame from "./Components/ColorGame/ColorGame";
 import Aviator from "./Components/Aviator/Aviator";
-// import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
-// import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
+import TeenPatti from "./Components/TeenPatti/TeenPatti";
+import ThirtyTwoCards from "./Components/32Cards/ThirtyTwoCards";
+import CardsB from "./Components/32cardsB/CardsB";
+
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -64,6 +66,10 @@ const App = ()=> {
         <Route path="/WalletSignIn" element={<WalletSignIn/>}/>
         <Route path="/ColorGame" element={<ColorGame/>}/>
         <Route path="/Aviator" element={<Aviator/>}/>
+        <Route path="/TeenPatti" element={<TeenPatti/>}/>
+        <Route path="/32Cards" element={<ThirtyTwoCards/>}/>
+        
+        <Route path="/32CardsB" element={<CardsB/>}/>
 
       </Routes>
       </BrowserRouter>
