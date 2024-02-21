@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-.thirtytwoB-game-div{
+.teenpatti-game-div{
     height: 89vh;
     /* width: 50%; */
     overflow-y: scroll;
 
 }
 
-.thirtytwoB-game-div::-webkit-scrollbar{
+.teenpatti-game-div::-webkit-scrollbar{
     display:none;
 }
 .teenpatti-game-h{
@@ -38,9 +37,85 @@
     background-color: #2C3D51;
     border: 1px solid #ff8A0C;
 }
+.dragon-tiger-pair-div{
+    background-color: #5a56562e;
+    height: 65px;
+}
+.orange-row-div{
+    background-color: #ff8A0C;
+    height: 100px;
+    border-radius: 5px;
+
+}
+.seven-card-div{
+    height: 55px;
+    width: 50px;
+}
+
+
+.red-zero{
+    color: rgb(185, 29, 29) !important;
+}
 
 
 
+.dragon-column{
+    background-color: #5a56562e;
+    height: 80px;
+    font-size: 13px;
+    color: white;
+}
+.blue-grey-btn{
+    background-image: linear-gradient( to right, #0088cc, #2c3e50) !important;
+    width: 94% !important;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "mukta";
+   
+}
+.dragon-heading{
+    font-size: 12px;
+    font-family: "mukta";
+    color:rgb(185, 29, 29);
+    font-weight: 600;
+}
+.border-tiger{
+    border-right: 1px solid grey;
+}
+.tiger-heading{
+    font-size: 12px;
+    font-family: "mukta";
+    color:rgb(216, 216, 29);
+    font-weight: 600;
+
+}
+.card-symbol-div{
+    height: 25px;
+    width: 24%;
+    background-color: white;
+    border: 0.5px solid black;
+
+}
+.card-symbol-img{
+    height: 15px;
+    /* width:%; */
+}
+.card-column-img-div{
+    height: 80px;
+    width: 40px;
+
+}
+.card-column-img{
+    height: 50px;
+}
+.card-zero{
+    font-size: 13px;
+    font-family: "mukta";
+    color:rgb(185, 29, 29);
+
+}
 
 
 
@@ -53,53 +128,9 @@
     font: 13px;
     font-family: "mukta";
     font-weight: bold;
-    border-radius: 5px;
 
 
-
 }
-.digit-card{
-    height: 300px;
-}
-.zero-div{
-    height: 32px;
-
-}
-.zero-div:hover{
-    background-color: #373e42;
-    color: white;
-}
-.digits-card-h{
-    height: 35px;
-    background-color: #E4E4E4;
-    width: 100%;
-    height: 35px;
-    color: #243A48;
-    font-size: 13px;
-    font-family: "mukta";
-    border-radius: 5px;
-    /* font-weight: bold; */
-
-    
-}
-.digit-zero{
-    color:rgb(238, 5, 5);
-    font-size: 16px;
-}
-.digits-button{
-    background-color: #3D444B;
-    height: 100px;
-    width: 19.5%;
-    margin-left: 1px;
-    margin-right: 1px;
-    font-size: 32px;
-    font-weight: 600;
-    /* font-family: */
-    /* font-family: "mukta"; */
-    font-family: "tourney";
-    color: white
-}
-
 .card-table-inner-row{
     background-color: white;
     width: 100%;
@@ -110,60 +141,7 @@
     font-weight: 500;
     border-top: 1px solid #b0b5b8;
 }
-.cardB-table-inner-row{
-    background-color: white;
-    width: 100%;
-    height: 57px;
-    color: #243A48;
-    font-size: 16px;
-    font-family: "mukta";
-    font-weight: 500;
-    border-top: 1px solid #b0b5b8;
-}
-.back-btn{
-    height: 44px;
-    background-color: #2196F3;
-    width:90px;
-    border: none;
-    font-size: 13px;
-}
-.backB-btn{
-    height: 56px;
-    background-color: #2196F3;
-    width:90px;
-    border: none;
-    font-size: 13px;
 
-}
-.backS-btn{
-    height: 44px;
-    background-color: #2196F3;
-    /* width:90px; */
-    width: 100%;
-    border: none;
-    font-size: 13px;
-
-}
-.layB-btn{
-    height: 56px;
-    background-color:#d67f23;
-    width:90px;
-    border: none;
-    font-size: 13px;
-
-
-}
-.lay-btn{
-    height: 44px;
-    background-color:#d67f23;
-    width:90px;
-    border: none;
-    font-size: 13px;
-}
-.zero{
-    color:#E32E27;
-    font-size: 11px;
-}
 .success-o{
     color:#3eb33c;
     font-size: 17px;
@@ -470,10 +448,10 @@
     font-weight: 600;
 }
 
-.results-modal-container {
+.lucky-results-modal-container {
     position: absolute;
     width: 470px;
-    height: 350px;
+    height: 230px;
     /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
     /* background-color: #01a839; */
     top: 30%;
@@ -507,10 +485,10 @@
         font-size: 13px !important;
         font-weight: 500;
     }
-    .results-modal-container {
+    .lucky-results-modal-container {
         position: absolute;
         width: 400px;
-        height: 350px;
+        height: 230px;
         /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
         /* background-color: #01a839; */
         top: 30%;

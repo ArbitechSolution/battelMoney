@@ -29,6 +29,8 @@ import Aviator from "./Components/Aviator/Aviator";
 import TeenPatti from "./Components/TeenPatti/TeenPatti";
 import ThirtyTwoCards from "./Components/32Cards/ThirtyTwoCards";
 import CardsB from "./Components/32cardsB/CardsB";
+import DragonTiger from "./Components/DragonTiger/DragonTiger";
+import Lucky from "./Components/Lucky7A/Lucky";
 
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -68,8 +70,9 @@ const App = ()=> {
         <Route path="/Aviator" element={<Aviator/>}/>
         <Route path="/TeenPatti" element={<TeenPatti/>}/>
         <Route path="/32Cards" element={<ThirtyTwoCards/>}/>
-        
         <Route path="/32CardsB" element={<CardsB/>}/>
+        <Route path="/DragonTiger" element={<DragonTiger/>}/>
+        <Route path="/Lucky7A" element={<Lucky/>}/>
 
       </Routes>
       </BrowserRouter>

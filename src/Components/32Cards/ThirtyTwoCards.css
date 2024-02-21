@@ -16,7 +16,7 @@
 .teenpatti-game-h p{
     color: white;
     font-family: "mukta";
-    font-size: 18px;
+    font-size: 17px !important;
     font-weight: 500;
 }
 .player-a-div{
@@ -415,11 +415,16 @@
 }
 @media screen and (max-width: 500px){
    
-   
+    .teenpatti-game-h p{
+        color: white;
+        font-family: "mukta";
+        font-size: 13px !important;
+        font-weight: 500;
+    }
     .results-modal-container {
         position: absolute;
         width: 400px;
-        height: 230px;
+        height: 350px;
         /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
         /* background-color: #01a839; */
         top: 30%;

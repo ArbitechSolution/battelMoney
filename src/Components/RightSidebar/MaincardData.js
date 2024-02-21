@@ -7,31 +7,34 @@ const MiancardData = [
     {   id:1,
         title:"20-20 TEEN PATTI",
         imgsrc:a,
-        // url:"https://play.google.com/store/apps/details?id=com.umerpharmacy",
+        link: "/TeenPatti"
         
     },
     {   id:2,
         title:"32 CARDA",
         imgsrc:b,
-        // url:"https://play.google.com/store/apps/details?id=com.system.lytics.lens&hl=en&gl=US",
+        link: "/32Cards"
+        
         
     },
     {   id:3,
         title:"32 CARDB",
         imgsrc:c,
-        // url:"https://play.google.com/store/apps/details?id=com.millionmart.android&hl=en&gl=US",
+        link: "/32CardsB"
+        
        
     },
     {   id:4,
         title :"DRAGON TIGER 20-20",
         imgsrc:d,
-        // url:"https://play.google.com/store/apps/details?id=com.satoshiairline.testapp&pli=1",
+        link: "/DragonTiger"
+        
         
     },
     {   id:5,
         title :"LUCKY 7A",
         imgsrc:e,
-        // url:"https://play.google.com/store/apps/details?id=com.satoshiairline.testapp&pli=1",
+        link: "Lucky7A"
         
 
     }

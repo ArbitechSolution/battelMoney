@@ -4,6 +4,7 @@ import MiancardData from './MaincardData';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { NavLink } from 'react-router-dom';
 
 const Maincard = () => {
     const settings = {
@@ -38,10 +39,15 @@ const Maincard = () => {
                 <div className='overlay'>
                     <div className=''>
                         <h2 className='mt-5 ms-3'>{currElem.title}</h2>
-
-                        <button className='mt-4 maincard-btn ms-3'>
+                       <NavLink to={currElem.link}>
+                       <button className='mt-4 maincard-btn ms-3'>
                             Play Now
                         </button>
+
+                       </NavLink>
+                        
+
+                        
 
                     </div>
 

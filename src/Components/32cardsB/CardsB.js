@@ -24,7 +24,7 @@ const CardsB = () => {
         ></div>
         <div className="data-modal-container">
           <div className="head-border d-flex align-items-center">
-            <p className="my-auto mx-2">32 Cards</p>
+            <p className="my-auto mx-2">32 Card</p>
           </div>
           <div className="container-body">
             <p className="my-1 mx-2">Player 9</p>
@@ -181,7 +181,7 @@ const CardsB = () => {
           <div className="thirtytwoB-game-div pt-2 p-2">
             <div className="teenpatti-game-h d-flex justify-content-between  ">
               <div className=" px-2">
-                <p className=" mt-1 ">Card 2020</p>
+                <p className=" mt-1 ">32 CARD B</p>
               </div>
               <div>
                 <p className="mt-1 px-2">
@@ -513,28 +513,28 @@ const CardsB = () => {
               <div className="px-2 mt-1">
                 <button className="digits-button">1
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">2
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">3
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">4
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">5
                 <p className="digit-zero my-0">0</p></button>
 
 
 
               </div>
               <div className="px-2 mt-1">
-                <button className="digits-button">1
+                <button className="digits-button">6
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">7
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">8
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">9
                 <p className="digit-zero my-0">0</p></button>
-                <button className="digits-button">1
+                <button className="digits-button">0
                 <p className="digit-zero my-0">0</p></button>
 
 

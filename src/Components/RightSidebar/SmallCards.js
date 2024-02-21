@@ -12,81 +12,73 @@ const SmallCards = () => {
     <>
       <div className="col-6">
         <NavLink to="/TeenPatti" className="nav-link">
-
-        
-        <div className="card smallcard-div ms-2 mt-3">
-          <img className=" small-card-img" src={a} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">TeenPatti 20-20</p>
-
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={a} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">TeenPatti 20-20</p>
+            </div>
           </div>
-        </div>
         </NavLink>
       </div>
       <div className="col-6">
-        <NavLink  to="/32Cards" className="nav-link">
-        <div className="card smallcard-div ms-2 mt-3">
-          <img className=" small-card-img" src={b} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">32 CardA</p>
-
+        <NavLink to="/32Cards" className="nav-link">
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={b} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">32 CardA</p>
+            </div>
           </div>
-        </div>
-
         </NavLink>
-        
       </div>
       <div className="col-6">
         <NavLink className="nav-link" to="/32CardsB">
-
-       
-        <div className="card smallcard-div ms-2 mt-3">
-          <img className=" small-card-img" src={c} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">32 CardB</p>
-
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={c} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">32 CardB</p>
+            </div>
           </div>
-        </div>
         </NavLink>
       </div>
       <div className="col-6">
-        <div className="card smallcard-div ms-2 mt-3">
-          <img  className=" small-card-img" src={d} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">Dragon Tiger 20-20</p>
-
+        <NavLink to="/DragonTiger" className="nav-link">
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={d} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">Dragon Tiger 20-20</p>
+            </div>
           </div>
-        </div>
+        </NavLink>
       </div>
       <div className="col-6">
-        <div className="card smallcard-div ms-2 mt-3">
-          <img  className=" small-card-img" src={e} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">Lucky 7A</p>
-
+        <NavLink className="nav-link" to="/Lucky7A">
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={e} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">Lucky 7A</p>
+            </div>
           </div>
-        </div>
+        </NavLink>
       </div>
       <div className="col-6">
-        <div className="card smallcard-div ms-2 mt-3">
-          <img  className=" small-card-img" src={f} alt="a" />
-          <div className="overlaySmallCard d-flex justify-content-center">
-            <p className="">Color Game</p>
-
+        <NavLink to="/ColorGame" className="nav-link">
+          <div className="card smallcard-div ms-2 mt-3">
+            <img className=" small-card-img" src={f} alt="a" />
+            <div className="overlaySmallCard d-flex justify-content-center">
+              <p className="">Color Game</p>
+            </div>
           </div>
-        </div>
+        </NavLink>
       </div>
       <div className="col-12 p-2">
-        <div className="card aviator-card mt-2 ">
-          <img className=" aviator-card-img" src={g} alt="a"/>
-          <div className="overlayAviatorCard d-flex justify-content-center">
-            <p className="overlayAviatorcard-p">Aviator</p>
-
+        <NavLink to="/Aviator" className="nav-link">
+          <div className="card aviator-card mt-2 ">
+            <img className=" aviator-card-img" src={g} alt="a" />
+            <div className="overlayAviatorCard d-flex justify-content-center">
+              <p className="overlayAviatorcard-p">Aviator</p>
+            </div>
           </div>
-
-
-        </div>
-
+        </NavLink>
       </div>
     </>
   );

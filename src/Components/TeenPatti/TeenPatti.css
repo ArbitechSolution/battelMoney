@@ -12,11 +12,15 @@
     background-color: #2C3D51;
     width: 100%;
     height: 39px;
-}
-.teenpatti-game-h p{
     color: white;
     font-family: "mukta";
     font-size: 18px;
+    font-weight: 500;
+}
+.teenpatti-h-p{
+    color: white;
+    font-family: "mukta";
+    font-size: 18px !important;
     font-weight: 500;
 }
 .player-a-div{
@@ -297,7 +301,7 @@
 .data-modal-container{
     position: absolute;
     width: 470px;
-    height: 335px;
+    height: 250px;
     /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
     background-color: black;
     top: 30%;
@@ -369,10 +373,29 @@
     font-family: "mukta";
 
 }
+.teen-results-modal-container{
+    position: absolute;
+        width: 400px;
+        height: 230px;
+        /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
+        /* background-color: #01a839; */
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border-radius: 8px; */
+        z-index:999;
+        border: 1px solid white;
+
+}
 @media screen and (max-width: 500px){
    
-   
-    .results-modal-container {
+    .teenpatti-h-p{
+        color: white;
+        font-family: "mukta";
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+    .teen-results-modal-container {
         position: absolute;
         width: 400px;
         height: 230px;
@@ -390,7 +413,7 @@
     .data-modal-container{
         position: absolute;
         width: 400px;
-        height: 335px;
+        height: 250px;
         /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
         background-color: black;
         top: 30%;

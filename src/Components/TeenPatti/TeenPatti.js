@@ -23,7 +23,7 @@ const TeenPatti = () => {
       ></div>
       <div className="data-modal-container">
         <div className="head-border d-flex align-items-center">
-          <p className="my-auto mx-2">32 Cards</p>
+          <p className="my-auto mx-2">TeenPatti</p>
         </div>
         <div className="container-body">
           <p className="my-1 mx-2">Player 9</p>
@@ -117,7 +117,7 @@ const TeenPatti = () => {
           }}
           className="Results-modal-wrapper"
         ></div>
-        <div className="results-modal-container bg-dark">
+        <div className="teen-results-modal-container bg-dark">
           <div className="results-modal-h d-flex justify-content-between pt-2">
             <div>Round ID: 24200216501</div>
             <MdCancel className="cross-icon-result me-2" onClick={()=>{setShowresultModal(false)}} />
@@ -168,10 +168,10 @@ const TeenPatti = () => {
           <div className="teenpatti-game-div pt-2 p-2">
             <div className="teenpatti-game-h d-flex justify-content-between  ">
               <div className=" px-2">
-                <p className=" mt-1 ">Card 2020</p>
+                <p className=" mt-1 teenpatti-h-p">Card 2020</p>
               </div>
               <div>
-                <p className="mt-1 px-2">
+                <p className="mt-1 px-2 teenpatti-h-p">
                   Round ID: 2024021633648 | Left Time: 56 | Rules
                 </p>
               </div>

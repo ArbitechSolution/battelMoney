@@ -209,7 +209,7 @@ const ThirtyTwoCards = () => {
           <div className="teenpatti-game-div pt-2 p-2">
             <div className="teenpatti-game-h d-flex justify-content-between  ">
               <div className=" px-2">
-                <p className=" mt-1 ">Card 2020</p>
+                <p className=" mt-1 ">32 CARD</p>
               </div>
               <div>
                 <p className="mt-1 px-2">
