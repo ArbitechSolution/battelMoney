@@ -1,0 +1,12 @@
+.footer-main-div{
+    background-color:  rgb(0, 0, 0) !important;
+    width: 97%;
+    height: 65px;
+    color: white !important;
+    position:absolute;
+    bottom: 0.5%;
+    opacity: 0.8;
+    border-radius: 50px;
+    border-left: 1px solid orange ;
+    border-right: 1px solid orange ;
+}

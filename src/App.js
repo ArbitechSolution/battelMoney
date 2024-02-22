@@ -31,12 +31,17 @@ import ThirtyTwoCards from "./Components/32Cards/ThirtyTwoCards";
 import CardsB from "./Components/32cardsB/CardsB";
 import DragonTiger from "./Components/DragonTiger/DragonTiger";
 import Lucky from "./Components/Lucky7A/Lucky";
+import Footer from "./Components/Footer/Footer";
 
 const App = ()=> {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
+  };
+  const handleLinkClick = () => {
+    // Close the sidebar when a link is clicked
+   setShowSidebar(false);
   };
 
   return (
@@ -45,8 +50,8 @@ const App = ()=> {
      
       <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
      
-     <Sidebar showSidebar={showSidebar} />
-
+     <Sidebar handleLinkClick={handleLinkClick} showSidebar={showSidebar} />
+      <Footer />
       <Routes>
 
         <Route path="/" element={<Home/>}/>

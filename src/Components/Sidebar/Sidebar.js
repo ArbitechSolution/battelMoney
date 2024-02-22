@@ -10,7 +10,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
 
-function Sidebar({ showSidebar }) {
+function Sidebar({ showSidebar,handleLinkClick }) {
   const [inPlayMenu, setInplayMenu] = useState(false);
   const [tennisMenu, setTennisMenu] = useState(false);
   const [subMenu, setSubMenu] = useState(false);
@@ -35,7 +35,7 @@ function Sidebar({ showSidebar }) {
   return (
     <div
       className={`sidebar   side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${
-        showSidebar ? " d-block" : " d-none"
+        showSidebar ? "d-block sm-side-bar position-absolute" : " d-none"
       }`}
     >
       <div className="row">
@@ -44,7 +44,7 @@ function Sidebar({ showSidebar }) {
           <ul className="list-group">
             <li className="list-group-item">
               <div className="d-flex ">
-                <NavLink className="nav-link" to="/">
+                <NavLink onClick={handleLinkClick} className="nav-link" to="/">
                   <img className=" side-icon" src={home} alt="h" />
                   <span className="ms-2">HOME</span>
                 </NavLink>
@@ -52,7 +52,7 @@ function Sidebar({ showSidebar }) {
             </li>
             <li className="list-group-item">
               <div className="d-flex">
-                <NavLink className="nav-link" to="/InPlay">
+                <NavLink onClick={handleLinkClick} className="nav-link" to="/InPlay">
                   <img className=" side-icon" src={inplay} alt="h" />
                   <span className="ms-2">IN-PLAY</span>
                 </NavLink>
@@ -60,7 +60,7 @@ function Sidebar({ showSidebar }) {
             </li>
             <li className="list-group-item">
               <div className="d-flex">
-                <NavLink className="nav-link" to="/LiveCasino">
+                <NavLink onClick={handleLinkClick} className="nav-link" to="/LiveCasino">
                   <img className=" side-icon" src={casino} alt="h" />
                   <span className="ms-2">LIVE CASINO</span>
                 </NavLink>
@@ -117,12 +117,12 @@ function Sidebar({ showSidebar }) {
                 {subMenu && (
                   <div className="d-flex flex-column">
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick} to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink  to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick}  to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>
@@ -158,12 +158,12 @@ function Sidebar({ showSidebar }) {
                 {subMenu && (
                   <div className="d-flex flex-column">
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink  to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick}  to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink  to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick}  to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>
@@ -197,12 +197,12 @@ function Sidebar({ showSidebar }) {
                 {subMenu && (
                   <div className="d-flex flex-column">
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink  to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick}  to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>
                     <div className="subMenu d-flex justify-content-center align-items-center">
-                      <NavLink  to="/Sport" className="nav-link">
+                      <NavLink onClick={handleLinkClick}  to="/Sport" className="nav-link">
                         Pakistan vs Newzeeland
                       </NavLink>
                     </div>

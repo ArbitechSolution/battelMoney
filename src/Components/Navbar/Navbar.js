@@ -1,9 +1,10 @@
 import React, { useState,useEffect } from "react";
 import logo from "../../Media/logo4.png";
 import "./Navbar.css";
+
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { NavLink,useLocation } from "react-router-dom";
+import { NavLink,Navigate,useLocation,useNavigate,useNavigation } from "react-router-dom";
 import { MdLeaderboard } from "react-icons/md";
 import { IoMdSwap } from "react-icons/io";
 import { FaCreditCard } from "react-icons/fa";
@@ -16,6 +17,7 @@ import { FaKey } from "react-icons/fa";
 import StakeSettingModal from "./StakeSettingModal";
 function Navbar({ toggleSidebar, showSidebar }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [modal, setModal] = useState(false);
   const [active,setActive]= useState(window.location.pathname);
   const displayModal = () => {
@@ -37,6 +39,7 @@ function Navbar({ toggleSidebar, showSidebar }) {
       setActive("/LiveCasino");
     }
   }, [location.pathname]);
+ 
   return (
     <nav className="navbar py-0  navbar-b d-block navbar-expand-lg navbar-dark bg-black">
       <div className="">

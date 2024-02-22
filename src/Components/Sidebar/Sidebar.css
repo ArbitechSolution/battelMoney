@@ -14,6 +14,12 @@
   .side-bar::-webkit-scrollbar{
     display:none;
 }
+.sm-side-bar{
+ 
+  top:11%;
+  z-index: 999999;
+
+}
   .list-group{
     background-color: #202020;
   
