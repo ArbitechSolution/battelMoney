@@ -11,10 +11,19 @@ import InPlayMatchData from "./InPlayMatchData";
 import colorimg from "../../Media/output-onlinepngtools (8).png";
 import aircraft from "../../Media/output-onlinepngtools (5).png";
 import { NavLink } from "react-router-dom";
-
+// import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+// import { fetchData } from "../../Redux/Slices/apiSlices";
 const MatchesDetail = () => {
   const [active, setActive] = useState(true);
   const [isVisible, setIsVisible] = useState(true);
+  const dispatch = useDispatch();
+  // const { data, loading, error } = useSelector((state) => state.api);
+  // console.log(data ,"data of api");
+
+  // useEffect(() => {
+  //   dispatch(fetchData());
+  // }, [dispatch]);
 
   useEffect(() => {
     // Toggle the visibility of the image every second

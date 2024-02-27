@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import "./App.css";
 
 import Home from "./Components/Home/Home";
+import "react-toastify/dist/ReactToastify.css";
 import Sport from "./Components/Sport/Sport";
 import WalletSignIn from "./Components/WalletSignin/WalletSignIn";
 import MyMarkeet from "./Components/MyMarkeet/MyMarkeet";
@@ -32,8 +33,11 @@ import CardsB from "./Components/32cardsB/CardsB";
 import DragonTiger from "./Components/DragonTiger/DragonTiger";
 import Lucky from "./Components/Lucky7A/Lucky";
 import Footer from "./Components/Footer/Footer";
+import { Provider } from "react-redux";
+import { store } from "./Redux/Store/store";
+import { ToastContainer, toast } from 'react-toastify';
 
-const App = ()=> {
+const App = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -41,56 +45,55 @@ const App = ()=> {
   };
   const handleLinkClick = () => {
     // Close the sidebar when a link is clicked
-   setShowSidebar(false);
+    setShowSidebar(false);
   };
 
   return (
     <div className="bg-black position-relative row app-row ">
-      <BrowserRouter>
+      <Provider store={store}>
      
-      <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar}/>
-     
-     <Sidebar handleLinkClick={handleLinkClick} showSidebar={showSidebar} />
-      <Footer />
-      <Routes>
-
-        <Route path="/" element={<Home/>}/>
-        <Route path="/InPlay" element={<InPlay/>}/>
-        <Route path="/Sport" element={<Sport/>}/>
-        <Route path="/MyMarkeet" element={<MyMarkeet/>}/>
-        <Route path="/BettingHistory" element={<BettingHistory/>}/>
-        <Route path="/FundsTransfer" element={<FundsTransfer/>}/>
-        <Route path="/WithdrawalUSDT" element={<WithDrawalUSDT/>}/>
-        <Route path="/WithdrawalHistory" element={<WithdrawHistory/>}/>
-        <Route path="/AccountStatement" element={<AccountStatement/>}/>
-        <Route path="/TransactionHistory" element={<TransactionHistory/>}/>
-        <Route path="/ProfitLoss" element={<ProfitLoss/>}/>
-        <Route path="/CasinoResults" element={<CasinoResults/>}/>
-        <Route path="/Deposit" element={<Deposit/>}/>
-        <Route path="/ChangePassword" element={<ChangePassword/>}/>
-        <Route path="/LiveCasino" element={<LiveCasino/>}/>
-        <Route path="/Login" element={<Login/>}/>
-        <Route path="/WalletSignIn" element={<WalletSignIn/>}/>
-        <Route path="/ColorGame" element={<ColorGame/>}/>
-        <Route path="/Aviator" element={<Aviator/>}/>
-        <Route path="/TeenPatti" element={<TeenPatti/>}/>
-        <Route path="/32Cards" element={<ThirtyTwoCards/>}/>
-        <Route path="/32CardsB" element={<CardsB/>}/>
-        <Route path="/DragonTiger" element={<DragonTiger/>}/>
-        <Route path="/Lucky7A" element={<Lucky/>}/>
-
-      </Routes>
-      </BrowserRouter>
-     
-      
-     
-
-      
-      
-      
-      
+        <BrowserRouter>
+        <ToastContainer />
+          <Navbar toggleSidebar={toggleSidebar} showSidebar={showSidebar} />
+         
+          <Sidebar
+            handleLinkClick={handleLinkClick}
+            showSidebar={showSidebar}
+          />
+          <Footer />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/InPlay" element={<InPlay />} />
+            <Route path="/Sport" element={<Sport />} />
+            <Route path="/MyMarkeet" element={<MyMarkeet />} />
+            <Route path="/BettingHistory" element={<BettingHistory />} />
+            <Route path="/FundsTransfer" element={<FundsTransfer />} />
+            <Route path="/WithdrawalUSDT" element={<WithDrawalUSDT />} />
+            <Route path="/WithdrawalHistory" element={<WithdrawHistory />} />
+            <Route path="/AccountStatement" element={<AccountStatement />} />
+            <Route
+              path="/TransactionHistory"
+              element={<TransactionHistory />}
+            />
+            <Route path="/ProfitLoss" element={<ProfitLoss />} />
+            <Route path="/CasinoResults" element={<CasinoResults />} />
+            <Route path="/Deposit" element={<Deposit />} />
+            <Route path="/ChangePassword" element={<ChangePassword />} />
+            <Route path="/LiveCasino" element={<LiveCasino />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/WalletSignIn" element={<WalletSignIn />} />
+            <Route path="/ColorGame" element={<ColorGame />} />
+            <Route path="/Aviator" element={<Aviator />} />
+            <Route path="/TeenPatti" element={<TeenPatti />} />
+            <Route path="/32Cards" element={<ThirtyTwoCards />} />
+            <Route path="/32CardsB" element={<CardsB />} />
+            <Route path="/DragonTiger" element={<DragonTiger />} />
+            <Route path="/Lucky7A" element={<Lucky />} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
-}
+};
 
 export default App;

@@ -9,4 +9,30 @@
     border-radius: 50px;
     border-left: 1px solid orange ;
     border-right: 1px solid orange ;
+    z-index: 99;
 }
+.footer-data{
+    color:#19D3FF;
+
+}
+.footer-data:hover{
+    color: white;
+}
+.footer-icon{
+    /* color: #19D3FF; */
+    font-size: 25px;
+
+}
+.footer-icon :hover{
+    /* color: white; */
+}
+.footer-h{
+    /* color:#19D3FF; */
+    font-size: 12px;
+    font-family: "mukta";
+    font-weight: 500;
+}
+.footer-h:hover{
+    /* color: white; */
+}
+
