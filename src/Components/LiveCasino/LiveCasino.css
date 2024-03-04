@@ -8,6 +8,10 @@
   .small-card-img{
     border-radius: 5px;
   }
+  .live-casino-main-div{
+    height: 88vh;
+
+  }
   .overlaySmallCard{
     position:absolute;
     bottom:0;

@@ -9,7 +9,7 @@ import { MdSportsBaseball } from "react-icons/md";
 const Footer = () => {
   return (
     <>
-      <div className="footer-main-div 	d-block d-lg-none ms-2">
+      <div className="footer-main-div 	d-block d-lg-none ms-1">
         <div className="row ">
           <div className="col-11 mx-auto">
             <div className="row  ">

@@ -11,9 +11,9 @@ import { NavLink } from "react-router-dom";
 
 const LiveCasino = () => {
   return (
-    <div className="col-lg-10">
+    <div className="col-lg-10 ">
       <div className="row">
-        <div className="col-12 p-3">
+        <div className="col-12 live-casino-main-div p-3">
           <div className="bet-h ">
             <h4 className="p-2 ms-2">Live Tables</h4>
             <div className="d-flex flex-wrap flex-row justify-content-between align-items-center px-2 py-1">
