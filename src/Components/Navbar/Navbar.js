@@ -165,7 +165,7 @@ function Navbar({ toggleSidebar, showSidebar }) {
 
             ):
             (
-             <div>
+             <div className="d-flex">
              <NavLink to="/Login"><button className="signin-btn mt-2  me-3">SignIn</button></NavLink>
               <NavLink to="/WalletSignIn"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
              </div>
