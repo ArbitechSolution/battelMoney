@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RightSidebar from "../RightSidebar/RIghtSidebar";
 import "./ColorGame.css";
 import { FaRegPlusSquare } from "react-icons/fa";
 import { FaRegMinusSquare } from "react-icons/fa";
+// import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBetHistory } from '../../Redux/Slices/colorsbetSlice';
+// import React, { useState } from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+import { placeBetColorBallData } from '../../Redux/Slices/placeColorBetSlice';
 
 const ColorGame = () => {
   const [count,setCount] = useState(0);
@@ -14,6 +20,33 @@ const ColorGame = () => {
   const [twentyActive, setTwentyActive] = useState(false);
   const [fiftyActive, setFiftyActive] = useState(false);
   const [hundActive, setHundActive] = useState(false);
+  const dispatch = useDispatch();
+  const [roundId, setRoundId] = useState('2');
+  const [uid, setUid] = useState('778899');
+  const [ball, setBall] = useState('3');
+  const [color, setColor] = useState('Green');
+  const [stake, setStake] = useState('1000');
+  const { isSuccess, isLoading, error } = useSelector((state) => state.placeBet);
+  const token = sessionStorage.getItem("token");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+   
+    dispatch(placeBetColorBallData({ roundid: roundId, uid, ball, color, stake }, token));
+  };
+ 
+  // const userdata = sessionStorage.getItem("userdata");
+  
+  if(isSuccess){
+    console.log("responce of bet", isSuccess)
+  }
+  if(isLoading){
+    console.log("loading",isLoading)
+  }
+  if(error)
+  {
+    console.log(error)
+  }
   const ShowModal = () => {
     return (
       <>
@@ -141,7 +174,7 @@ const ColorGame = () => {
                 Close
 
               </button>
-              <button className="Green-button">
+              <button  onClick={handleSubmit} className="Green-button">
                  Place Bets
               </button>
 
@@ -251,10 +284,11 @@ const ColorGame = () => {
                     }} className="small-green-btn  d-flex justify-content-center align-items-center">
                     7
                   </div>
-                  <div onClick={() => {
-                      setModal(true);
+                  <div onClick={handleSubmit
+                      // setModal(true);
                       
-                    }} className="small-red-btn d-flex justify-content-center align-items-center">
+                      
+                    } className="small-red-btn d-flex justify-content-center align-items-center">
                     8
                   </div>
                   <div onClick={() => {

@@ -26,6 +26,12 @@ function Navbar({ toggleSidebar, showSidebar }) {
   const closeModal = () => {
     setModal(false);
   };
+  const handleLogout = () => {
+    // Remove token from sessionStorage
+    sessionStorage.removeItem('token');
+  };
+  const token = sessionStorage.getItem("token");
+  // console.log("storedJwtToken ",storedJwtToken)
   useEffect(() => {
     // Update active link on route change
   
@@ -63,9 +69,10 @@ function Navbar({ toggleSidebar, showSidebar }) {
             </div>
           </div>
           <div className="col-3 col-lg-3  col-md-3 col-sm-3 order-lg-3 order-3  order-xsm-3 d-flex justify-content-end  ">
-            <NavLink to="/Login"><button className="signin-btn mt-2  me-3">SignIn</button></NavLink>
-            <NavLink to="/WalletSignIn"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
-            <div class="dropdown mt-0">
+           
+           {
+            token ? (
+              <div class="dropdown mt-0">
               <button class="dropbtn mt-2 pt-0 d-flex">
                 <div className="person-icon-div">
                   <BsFillPersonFill className="person-icon" />
@@ -147,8 +154,28 @@ function Navbar({ toggleSidebar, showSidebar }) {
                     <FaKey />
                   </div>
                 </NavLink>
+                <NavLink onClick={handleLogout} to="/">
+                  <div className="d-flex justify-content-between">
+                    LOGOUT
+                    <FaKey />
+                  </div>
+                </NavLink>
               </div>
             </div>
+
+            ):
+            (
+             <div>
+             <NavLink to="/Login"><button className="signin-btn mt-2  me-3">SignIn</button></NavLink>
+              <NavLink to="/WalletSignIn"><button className="wallet-btn mt-2  me-3">Wallet Sign...</button></NavLink>
+             </div>
+
+
+              
+
+            )
+           }
+            
           </div>
           <div className=" col-1 col-lg-3 col-sm-3   order-lg-4 order-1 ">
             {/* Toggler/collapsible Button */}

@@ -1,7 +1,34 @@
 import React from 'react';
 import "./ChangePassword.css";
+import  { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { updatePasswordData } from '../../Redux/Slices/updatePassSlice';
+import { toast } from "react-toastify";
 
 const ChangePassword = () => {
+  const dispatch = useDispatch();
+  const [oldPassword, setOldPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const { isSuccess, isLoading, error } = useSelector((state) => state.updatePass);
+  const token = sessionStorage.getItem("token");
+  const uid = '727681'; // Replace with the user's UID
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(updatePasswordData({ uid, oldPassword, newPassword, token }));
+  };
+  if (isLoading) {
+    // return <div>Loading...</div>;
+  }
+  
+  if (isSuccess) {
+     console.log("password changed successfully", isSuccess)
+    toast.success("password changed successfully")
+  }
+  
+  if (error) {
+    // return <div>Error: {error.message}</div>;
+  }
   return (
     <div className="col-lg-10">
       <div className="row">
@@ -16,14 +43,15 @@ const ChangePassword = () => {
                 
 
                 <div className="px-4">
-                  <form>
+                  <form onSubmit={handleSubmit}>
                   <div class="form-group mt-2">
                       <label for="exampleInputPassword1">Current Password*</label>
                       <input
                         type="password"
                         className="form-control mt-2"
                         id="exampleInputPassword1"
-                        placeholder="Password"
+                        placeholder="Current Password"
+                        onChange={(e)=>{setOldPassword(e.target.value)}}
                       />
                     </div>
                     <div class="form-group mt-2">
@@ -32,7 +60,8 @@ const ChangePassword = () => {
                         type="password"
                         className="form-control mt-2"
                         id="exampleInputPassword1"
-                        placeholder="Password"
+                        placeholder="New Password"
+                        onChange={(e=>{setNewPassword(e.target.value)})}
                       />
                     </div>
                     <div class="form-group mt-2">
@@ -41,7 +70,7 @@ const ChangePassword = () => {
                         type="password"
                         className="form-control mt-2"
                         id="exampleInputPassword1"
-                        placeholder="Password"
+                        placeholder=" Confirm Password"
                       />
                     </div>
 

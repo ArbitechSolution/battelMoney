@@ -1,7 +1,7 @@
 // authAPI.js
 import axios from 'axios';
 
-const baseURL = 'https://battlemoney-match-api.nakshtech.info/';
+const baseURL = 'https://battlemoney-auth-api.nakshtech.info/';
 
 const authAPI = axios.create({
   baseURL,

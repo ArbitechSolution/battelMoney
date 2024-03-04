@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchLossProfitData } from '../../Redux/Slices/lossProfitSlice';
 
 const ProfitLoss = () => {
+  const dispatch = useDispatch();
+  const { lossProfitData, isLoading, error } = useSelector((state) => state.lossProfit);
+  const token = sessionStorage.getItem("token");
+  const uid = '727681'; // Replace with the user's UID
+  const fromDate = ''; // Define your fromDate
+  const toDate = ''; // Define your toDate
+  useEffect(() => {
+    dispatch(fetchLossProfitData({ uid, fromDate, toDate, token }));
+  }, [dispatch, uid, fromDate, toDate, token]);
+  useEffect(() => {
+    if (lossProfitData) {
+      console.log('Fetching lossProfitData', lossProfitData)
+   
+    }
+  }, [lossProfitData]);
+
   return (
     <div className="col-lg-10 com-h">
     <div className="row">

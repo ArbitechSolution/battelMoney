@@ -1,6 +1,29 @@
-import React from 'react'
+
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchAccountStatement } from '../../Redux/Slices/accountStatementSlice';
 
 const AccountStatement = () => {
+  const dispatch = useDispatch();
+  const { accountStatement, isLoading, error } = useSelector((state) => state.accountStatement);
+  const userId = sessionStorage.getItem("userData");
+  const token = sessionStorage.getItem("token");
+
+  useEffect(() => {
+    const data = {
+      uid: '727681',
+      fromdate: '',
+      todate: ''
+    };
+    dispatch(fetchAccountStatement({ data, token }));
+  }, [dispatch, token]);
+
+  useEffect(() => {
+    if (accountStatement) {
+      console.log('Fetching account statement', accountStatement)
+   
+    }
+  }, [accountStatement]);
   return (
     <div className="col-lg-10 com-h">
     <div className="row">

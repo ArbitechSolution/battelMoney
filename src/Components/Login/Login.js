@@ -8,34 +8,103 @@ import { loginUser } from '../../Redux/Slices/authSlice';
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
+import axios from 'axios';
 const Login = () => {
   const [UserName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const ip = useSelector(selectIP);
-  const { user, isLoading, error } = useSelector(state => state.auth)
+  const { user, isLoading, } = useSelector(state => state.auth)
   console.log(ip);
 
   useEffect(() => {
     dispatch(fetchIP());
   }, [dispatch]);
+  // const encryptdata = async (payload) => {
+  //   try {
+  //     let res;
+  //     let response = await axios.get("https://battlemoney-auth-api.nakshtech.info/getPublicKey");
+  //     let publicKey = response.data.publicKey;
+  //     if (publicKey) {
+  //       const data = JSON.stringify(payload);
+
+  //       const textBuffer = new TextEncoder().encode(data);
+
+  //       // Convert base64 publicKey to Uint8Array
+  //       const binaryString = window.atob(publicKey);
+  //       const len = binaryString.length;
+  //       const bytes = new Uint8Array(len);
+  //       for (let i = 0; i < len; i++) {
+  //         bytes[i] = binaryString.charCodeAt(i);
+  //       }
+
+  //       const cryptoKey = await window.crypto.subtle.importKey(
+  //         "spki",
+  //         bytes,
+  //         {
+  //           name: "RSA-OAEP",
+  //           hash: "SHA-256",
+  //         },
+  //         true,
+  //         ["encrypt"],
+  //       );
+  //       const encryptedData = await window.crypto.subtle.encrypt(
+  //         {
+  //           name: "RSA-OAEP",
+  //         },
+  //         cryptoKey,
+  //         textBuffer,
+  //       );
+  //       // Convert encryptedData to base64
+  //       const base64EncryptedData = btoa(
+  //         String.fromCharCode(...new Uint8Array(encryptedData)),
+  //       );
+
+  //       return base64EncryptedData;
+  //     }
+  //   } catch (e) {
+  //     console.log("encrypt Api error:", e);
+  //   }
+  // };
   const submitLogin = (e)=>{
 
       e.preventDefault();
-      dispatch(loginUser({ username: UserName, password: password, ipaddress: ip }))
-      console.log("User:", user.data.result);
+      // let body = encryptdata({
+      //   username: UserName,
+      //   password: UserName,
+      //   ipaddress: ip,
+      // });
+       dispatch(loginUser({ username: UserName, password: password, ipaddress: ip }))
+      
+       
+  }
+ 
+  useEffect(() => {
+    if (user) {
+      // Fetch additional data or perform actions based on user state
+      console.log("User state updated:", user);
+      console.log("User:", user);
+      // console.log(JSON.stringify(user.data.data))
     let responce = user.data.result
    console.log("res", responce);
    if(responce === "Successfull"){
-    toast.success("Successfull")
+    toast.success("Logged In Successfully")
+    let userdata = user.data.resultid;
+    let token = user.token;
+    console.log("token", token)
+    sessionStorage.setItem("token", token )
+
+    console.log("userdataID", userdata);
+    sessionStorage.setItem('userData', user.data.resultid);
     navigate("/")
     console.log("loggedin")
    }
    else{
     toast.error("wrong username of password")
    }
-  }
+    }
+  }, [user]);
    
   
 
@@ -43,9 +112,9 @@ const Login = () => {
     console.log("Is Loading:", isLoading);
   }, [isLoading]);
 
-  useEffect(() => {
-    console.log("Error:", error);
-  }, [error]);
+  // useEffect(() => {
+  //   console.log("Error:", error);
+  // }, [error]);
   return (
     <div className="background-img">
       <div className="d-flex justify-content-center align-items-center">
