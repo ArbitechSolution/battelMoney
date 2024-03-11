@@ -27,7 +27,7 @@ const ScoreCard = () => {
           <button className="blue-btn">
             <MdOutlineStackedLineChart />
           </button>
-          <div className="mx-3">IN-PLAY</div>
+          <p className="inplay-w px-3 text-center d-flex align-items-center pt-1">IN<span>-</span>PLAY</p>
           <button className="blue-btn">
             <MdOutlineOndemandVideo />
           </button>

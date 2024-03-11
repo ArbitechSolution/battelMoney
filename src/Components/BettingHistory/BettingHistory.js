@@ -3,6 +3,7 @@ import "./BettingHistory.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBetHistoryData } from "../../Redux/Slices/betHistorySlice";
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 const BettingHistory = () => {
   const dispatch = useDispatch();
@@ -93,6 +94,8 @@ const BettingHistory = () => {
               </div>
             </div>
 
+           <div className="table-div">
+            <Scrollbars>
             <table class="table table-dark table-striped bd">
               <thead>
                 <tr>
@@ -127,6 +130,10 @@ const BettingHistory = () => {
                 )}
               </tbody>
             </table>
+
+            </Scrollbars>
+          
+           </div>
           </div>
         </div>
       </div>

@@ -159,6 +159,9 @@ hr {
     font-family: "mukta";
    
 }
+.back-lay-row{
+    height: 10px;
+}
 .six-info{
     background-color: rgb(253, 228, 2);
     border-radius: 20px;
@@ -225,6 +228,12 @@ hr {
     font-family: "mukta";
 
 } 
+.inplay-w{
+    font-size: 13px;
+    font-family: "mukta";
+    font-weight: 500;
+}
+
 .lead{
     color: white;
     font-size: 14px;

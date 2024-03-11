@@ -5,12 +5,76 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginUserWithWallet } from '../../Redux/Slices/walletLoginSlice';
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Web3 from 'web3'
 
 const WalletSignIn = () => {
   const [walletAddress, setWalletAddress] = useState();
+  const [account, setAccount] = useState(null)
+  const [chainId, setChainId] = useState(null)
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user, isLoading, error } = useSelector((state) => state.walletLogin);
+  const metamask = async () => {
+    let isConnected = false
+    try {
+        if (window.ethereum) {
+            window.web3 = new Web3(window.ethereum)
+            await window.ethereum.enable()
+            isConnected = true
+        } else if (window.web3) {
+            window.web3 = new Web3(window.web3.currentProvider)
+            isConnected = true
+        } else {
+            isConnected = false
+        }
+        if (isConnected === true) {
+          const web3 = window.web3;
+          let accounts = await web3.eth.getAccounts();
+          if (accounts.length > 0) {
+            setWalletAddress(accounts[0]); // Set the wallet address to the state
+          }
+            console.log("accounts", accounts);
+            console.log("accounts0", accounts[0]);
+            // setuserAddress(accounts[0])
+            // console.log("accounts0Length", accounts[0].length);
+            // if ( accounts[0].length > 30) {
+            //     setAccount(accounts[0])
+            //     setInputValue(accounts[0])   
+            // }
+            
+            let chain = await web3.eth.getChainId()
+            setChainId(chain)
+            if (chain === 56) {
+                // handleLogin2(accounts[0]);
+            }
+            window.ethereum.on('accountsChanged', async function (accounts) {
+                if (account !== accounts[0]) {
+                    setAccount(accounts[0])
+                    // setuserAddress(account[0])
+                    // setInputValue(account[0])
+                }
+                if (walletAddress !== accounts[0]) {
+                    // console.log("[0]",account[0])
+                    setWalletAddress(accounts[0])
+                }
+                let chain = await web3.eth.getChainId()
+                setChainId(chain)
+                if (chain === 56) {
+                }
+            })
+        }
+    } catch (error) {
+        console.log('error message', error.message)
+    }
+}
+
+useEffect(() => {
+    // return () => {
+        // setInputValue('')
+        // setAccount('')
+        metamask()
+    // }
+}, [])
   const walletLogin = (e)=>{
     e.preventDefault();
     const walletRegex = /^0x[a-fA-F0-9]{40}$/;
@@ -40,8 +104,9 @@ const WalletSignIn = () => {
     navigate("/")
     console.log("loggedin")
    }
-   else{
-    toast.error("wrong username of password")
+   if( responce === "Wrong Wallet Address !!")
+   {
+    toast.error("wrong wallet address")
    }
     }
   }, [user]);
@@ -50,13 +115,13 @@ const WalletSignIn = () => {
    
   }, [dispatch, walletAddress]);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
+  // if (error) {
+  //   return ;
+  // }
   return (
     <div className="background-img">
       <div className="d-flex justify-content-center align-items-center mt-5">
@@ -77,6 +142,7 @@ const WalletSignIn = () => {
                   id="exampleInputEmail1"
                   placeholder="Enter Wallet Address"
                   aria-describedby="emailHelp"
+                  value={walletAddress || ''}
                   onChange={(e)=>{setWalletAddress(e.target.value);}}
                 />
               </div>

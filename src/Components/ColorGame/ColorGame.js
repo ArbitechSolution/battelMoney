@@ -22,17 +22,33 @@ const ColorGame = () => {
   const [hundActive, setHundActive] = useState(false);
   const dispatch = useDispatch();
   const [roundId, setRoundId] = useState('2');
-  const [uid, setUid] = useState('778899');
-  const [ball, setBall] = useState('3');
-  const [color, setColor] = useState('Green');
-  const [stake, setStake] = useState('1000');
+  // const [uid, setUid] = useState('778899');
+  const [ball, setBall] = useState('');
+  const [color, setColor] = useState('');
+  const [stake, setStake] = useState('');
   const { isSuccess, isLoading, error } = useSelector((state) => state.placeBet);
   const token = sessionStorage.getItem("token");
+  console.log(token);
 
-  const handleSubmit = (e) => {
+  const uid = sessionStorage.getItem("userData"); 
+  console.log(uid)
+  const handleSubmit = async (e) => {
     e.preventDefault();
    
-    dispatch(placeBetColorBallData({ roundid: roundId, uid, ball, color, stake }, token));
+    const data = {
+      roundid: '2',
+      uid: uid,
+      ball: '3',
+      color: 'Green',
+      stake: '1000',
+    };
+
+    try {
+      await dispatch(placeBetColorBallData({ data, token }));
+      console.log("token after", token)
+    } catch (error) {
+      console.error('Error placing bet:', error);
+    }
   };
  
   // const userdata = sessionStorage.getItem("userdata");
@@ -53,16 +69,18 @@ const ColorGame = () => {
         <div
           onClick={() => {
             setModal(false);
+            setBall("");
+            setColor("");
           }}
           className="color-modal-wrapper"
         ></div>
         <div className="color-modal-container card">
           <div className="model-h-dive  d-flex justify-content-between ">
-            <div className="px-2 p-1">Green</div>
+            <div className="px-2 p-1">{color ? <spna>{color}</spna> : <span>{ball}</span> }</div>
             <div className="px-2 p-1">Time Left 20</div>
           </div>
           <div className="p-2">
-            Contract Money
+            <p className="mb-0 pb-0 contract-money">Contract Money</p>
             <div className="boxes-div d-flex">
               <button onClick={() => {
                   setTwoActive(true);
@@ -141,8 +159,8 @@ const ColorGame = () => {
               </button>
             </div>
             <div className=" p-2 mt-2">
-              Number
-              <div className="main-counter-div mt-3 d-flex">
+            <p className="mb-0 pb-0 contract-money">Number</p>
+              <div className="main-counter-div mt-1 d-flex">
                 <button onClick={()=>{setCount(count-1)}} className="minus-div d-flex justify-content-center align-items-center">
                   -
 
@@ -163,23 +181,25 @@ const ColorGame = () => {
 
             </div>
             <div className="mt-2">
-              Total Contract Money is 2
+            <p className="mb-0 pb-0 contract-money"> Total Contract Money</p>
 
             </div>
-            <div className="d-flex justify-content-center mt-2 ">
+            <div className="d-flex justify-content-center  ">
 
               <button  onClick={() => {
             setModal(false);
-          }} className="red-button">
+            setBall("");
+            setColor("");
+          }} className="red-modal-btn">
                 Close
 
               </button>
-              <button  onClick={handleSubmit} className="Green-button">
+              <button  onClick={handleSubmit} className="green-modal-btn">
                  Place Bets
               </button>
 
             </div>
-            <div className="p-1 success">
+            <div className="p-1 alert-s-rem">
               Bet Slip Will Close in 18 Seconds
 
             </div>
@@ -210,6 +230,7 @@ const ColorGame = () => {
                   <button
                     onClick={() => {
                       setModal(true);
+                      setColor("green")
                       
                     }}
                     className="Green-button"
@@ -220,12 +241,14 @@ const ColorGame = () => {
                 <div className="col-4">
                   <button onClick={() => {
                       setModal(true);
+                      setColor("violet")
                       
                     }} className="violet-button">VIOLET</button>
                 </div>
                 <div className="col-4">
                   <button onClick={() => {
                       setModal(true);
+                      setColor("red")
                       
                     }} className="red-button">RED</button>
                 </div>
@@ -234,31 +257,35 @@ const ColorGame = () => {
                 <div className="col-md-6 mx-auto d-flex justify-content-between">
                   <div onClick={() => {
                       setModal(true);
+                      setBall("0")
                       
                     }} className="violet-red-btn d-flex justify-content-center align-items-center">
                     0
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      setBall("1")
                       
                     }} className="small-green-btn d-flex justify-content-center align-items-center">
                     1
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      setBall("2")
                       
                     }} className="small-red-btn d-flex justify-content-center align-items-center">
                     2
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      setBall("3")
                       
                     }} className="small-green-btn d-flex justify-content-center align-items-center">
                     3
                   </div>
                   <div onClick={() => {
                       setModal(true);
-                      
+                      setBall("4")
                     }} className="small-red-btn d-flex justify-content-center align-items-center">
                     4
                   </div>
@@ -268,24 +295,30 @@ const ColorGame = () => {
                 <div className="col-md-6 mx-auto d-flex justify-content-between">
                   <div onClick={() => {
                       setModal(true);
+                      setBall("5")
                       
                     }} className="violet-green-btn d-flex justify-content-center align-items-center">
                     5
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      setBall("6")
                       
                     }} className="small-red-btn d-flex justify-content-center align-items-center">
                     6
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      setBall("7")
                       
                     }} className="small-green-btn  d-flex justify-content-center align-items-center">
                     7
                   </div>
-                  <div onClick={handleSubmit
-                      // setModal(true);
+                  <div onClick={()=>{
+                    setModal(true)
+                    setBall("8")
+
+                  }   
                       
                       
                     } className="small-red-btn d-flex justify-content-center align-items-center">
@@ -293,6 +326,8 @@ const ColorGame = () => {
                   </div>
                   <div onClick={() => {
                       setModal(true);
+                      
+                      setBall("9")
                       
                     }} className="small-green-btn d-flex justify-content-center align-items-center">
                     9

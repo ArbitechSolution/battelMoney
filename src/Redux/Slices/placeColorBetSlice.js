@@ -9,9 +9,9 @@ const initialState = {
 
 export const placeBetColorBallData = createAsyncThunk(
   'placeBet/placeBetColorBallData',
-  async (requestData, { rejectWithValue }) => {
+  async ({ data, token }, { rejectWithValue }) => {
     try {
-      const response = await placeBetColorBall(requestData);
+      const response = await placeBetColorBall(data, token);
       return response;
     } catch (error) {
       return rejectWithValue(error.response.data);

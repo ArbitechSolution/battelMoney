@@ -11,7 +11,9 @@ const ChangePassword = () => {
   const [newPassword, setNewPassword] = useState('');
   const { isSuccess, isLoading, error } = useSelector((state) => state.updatePass);
   const token = sessionStorage.getItem("token");
-  const uid = '727681'; // Replace with the user's UID
+  // const uid = '727681';
+  const uid = sessionStorage.getItem("userData");
+   // Replace with the user's UID
 
   const handleSubmit = (e) => {
     e.preventDefault();

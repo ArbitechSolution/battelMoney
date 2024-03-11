@@ -39,7 +39,8 @@ const MatchesDetail = () => {
       <SliderH />
       <div className="MainArea ">
         <div className="sport-div bg-dark row">
-          <div
+         <div className="sports-horiz-row d-flex">
+         <div
             onClick={() => {
               setActive(true);
             }}
@@ -124,6 +125,7 @@ const MatchesDetail = () => {
               <p className="ms-1 mt-1 sport-name mt-3">AVIATOR</p>
             </NavLink>
           </div>
+         </div>
 
           {/* <----------------------MatchData-----------------------> */}
           <MatchData />

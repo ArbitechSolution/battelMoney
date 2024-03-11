@@ -1,5 +1,12 @@
 .com-h{
     min-height: 88vh;
+    overflow-y: scroll;
+}
+.com-h::-webkit-scrollbar{
+    display:none;
+}
+.table-div{
+    height: 68vh;
 }
 .dates-div{
     /* width: 100%; */
@@ -26,3 +33,14 @@
     border-color: lightgray;
 
 }
+
+@media screen and (max-width: 700px){
+    .table-div{
+        height: 55vh;
+    }
+    
+
+}
+
+
+

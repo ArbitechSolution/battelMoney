@@ -11,7 +11,7 @@ const AccountStatement = () => {
 
   useEffect(() => {
     const data = {
-      uid: '727681',
+      uid: userId,
       fromdate: '',
       todate: ''
     };

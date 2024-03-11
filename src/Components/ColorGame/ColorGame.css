@@ -211,7 +211,7 @@
 .color-modal-container {
     position: absolute;
     width: 520px;
-    height: 370px;
+    height: 310px !important;
     /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
     /* background-color: #01a839; */
     top: 30%;
@@ -225,11 +225,13 @@
 .model-h-dive{
     background-color: #CFD5D9;
     font-size: 17px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-family: "mukta";
     height: 43px;
 }
 .num-box{
-    height: 40px;
+    height: 37px !important;
     width: 80px;
     border: none;
     color: #9e9a9a;
@@ -238,13 +240,17 @@
     /* background-color: rgb(165, 152, 152); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
+.contract-money{
+    font-size: 14px;
+    font-family: "mukta";
+}
 .num-box.is-activated{
-    background-color: #9e9a9a !important;
-    color: black;
+    background-color: #b6afaf !important;
+    color: rgb(0, 0, 0);
 }
 .minus-div{
     width: 50px;
-    height: 45px;
+    height: 40px !important;
     border: none;
     color: #9e9a9a;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -253,7 +259,7 @@
 }
 .plus-div{
     width: 50px;
-    height: 45px;
+    height: 40px !important;
     border: none;
     color: #9e9a9a;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -268,6 +274,52 @@
     font-size: 20px;
     
 }
+.red-modal-btn{
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+    box-shadow: rgb(250 60 9 / 40%) 0px 0px 8px;
+    margin: 5px;
+    padding: 5px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 3px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 45px;
+    font-family: "mukta";
+    font-weight:bolder;
+    border: none;
+
+}
+.green-modal-btn{
+    background-image: linear-gradient(to right, #3d8b13 0%, #25c321 51%, #6c7b65 100%);
+    box-shadow: rgb(0 194 130 / 40%) 0px 0px 8px;
+    margin: 5px;
+    padding: 5px 30px;
+    text-align: center;
+    height: 45px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 3px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    font-family: "mukta";
+    font-weight:bolder;
+
+}
+.alert-s-rem{
+    color:#2FB11D;
+    font-size: 12px;
+    font-family: "mukta";
+}
 @media screen and (max-width: 500px){
     .color-game-h p{
         font-size: 12px;;
@@ -275,8 +327,8 @@
    
     .color-modal-container {
         position: absolute;
-        width: 400px;
-        height: 370px;
+        width: 380px !important;
+        height: 300px;
         /* background: linear-gradient(105deg, #7D2DE6 0%, #7E2EE7 40%, #7C2CE5 100%); */
         /* background-color: #01a839; */
         top: 30%;

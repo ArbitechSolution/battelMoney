@@ -8,6 +8,14 @@
 .center-div::-webkit-scrollbar{
     display:none;
 }
+.sports-horiz-row {
+    width: 100%;
+    overflow-x: scroll;
+
+}
+.sports-horiz-row::-webkit-scrollbar{
+    display: none;
+}
 
 .MainArea{
     background-color: #202020;
@@ -147,7 +155,7 @@
     border: none;
     border-radius: 4px;
     height:30px;
-    width:42%;
+    width:43%;
     font-family: "mukta";
     font-weight: 500;
 
@@ -182,12 +190,12 @@
 }
 @media screen and (max-width: 700px){
     .blue-btn{
-        width: 60px;
+        /* width: 60px; */
         margin-left: 5px;
         margin-bottom: 3px;
     }
     .orange-btn{
-        width: 60px;
+        /* width: 60px; */
         margin-bottom: 3px;
     }
 
@@ -195,13 +203,13 @@
 }
 @media screen and (max-width: 450px){
     .blue-btn{
-        width: 36px;
-        margin-left: 15px;
+        /* width: 36px; */
+        margin-left: 5px;
         margin-bottom: 3px;
         
     }
     .orange-btn{
-        width: 36px;
+        /* width: 36px; */
         margin-bottom: 3px;
     }
 

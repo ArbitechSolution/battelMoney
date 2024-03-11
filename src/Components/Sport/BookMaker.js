@@ -7,11 +7,11 @@ const BookMaker = () => {
       <div className="Match-ods-h d-flex align-items-center">
         <p className="mx-2 mt-3 d-flex">BOOKMAKER FAST BET(0% COMMISION) <div className='green-live-dot ms-2 mt-2'></div></p>
       </div>
-      <div className="row  bg-dark ">
-        <div className="col-7 mb-0"></div>
-        <div className="col-5 mb-0 pb-0">
-          <button className="back mb-0">Back</button>
-          <button className="lay ms-1 mb-0">Lay</button>
+      <div className="row back-lay-row  bg-dark ">
+        <div className="col-7 "></div>
+        <div className="col-5 ">
+          <button className="back ">Back</button>
+          <button className="lay ms-1">Lay</button>
         </div>
       </div>
       <div className="betting-team-info">

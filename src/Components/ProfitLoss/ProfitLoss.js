@@ -6,7 +6,9 @@ const ProfitLoss = () => {
   const dispatch = useDispatch();
   const { lossProfitData, isLoading, error } = useSelector((state) => state.lossProfit);
   const token = sessionStorage.getItem("token");
-  const uid = '727681'; // Replace with the user's UID
+  const uid = sessionStorage.getItem("userData");
+  // console.log(uid,"userid")
+  // const uid = '727681';
   const fromDate = ''; // Define your fromDate
   const toDate = ''; // Define your toDate
   useEffect(() => {

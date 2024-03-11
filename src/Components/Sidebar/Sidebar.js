@@ -35,7 +35,7 @@ function Sidebar({ showSidebar,handleLinkClick }) {
   return (
     <div
       className={`sidebar   side-bar col-lg-2 col-sm-4  h-sm-auto d-lg-block${
-        showSidebar ? "d-block" : " d-none"
+        showSidebar ? "d-block sm-side-bar position-absolute" : " d-none"
       }`}
     >
       <div className="row">
